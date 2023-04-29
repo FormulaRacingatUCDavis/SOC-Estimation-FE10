@@ -36738,7 +36738,7 @@ void OSCILLATOR_Initialize(void);
 # 98 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 44 "main.c" 2
-# 95 "main.c"
+# 94 "main.c"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\math.h" 1 3
 # 15 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\math.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -37111,7 +37111,7 @@ double jn(int, double);
 double y0(double);
 double y1(double);
 double yn(int, double);
-# 95 "main.c" 2
+# 94 "main.c" 2
 
 
 
@@ -37132,7 +37132,7 @@ float mat_get(unsigned char row, unsigned char column, Matrix *);
 void mat_fill_zero(Matrix *);
 int mat_multiply(Matrix *matrixA, Matrix *matrixB, Matrix *matrixC);
 void mat_transpose(Matrix* matrix, Matrix* result);
-# 99 "main.c" 2
+# 98 "main.c" 2
 
 
 
@@ -37256,7 +37256,7 @@ void EKF(Matrix* xhatk_1, Matrix* Pk_1, float I, float Ik_1, float V, float Voc0
  }
 
 }
-# 234 "main.c"
+# 233 "main.c"
 void main(void) {
 
     SYSTEM_Initialize();
@@ -37295,7 +37295,7 @@ void main(void) {
 
 
  float Rk = powf(10,-4);
-# 288 "main.c"
+# 287 "main.c"
     Matrix xhat;
     mat_init(2, 1, &xhat);
  Matrix Qk1;
@@ -37341,7 +37341,7 @@ void main(void) {
 
 
     while (1) {
-# 350 "main.c"
+# 349 "main.c"
         actualSOC = 0.97;
         Vc = 0.2;
         V = 0.04;

@@ -95,15 +95,15 @@ channel_FVR_Buffer2 63
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"120 C:\Users\Melody\MPLABXProjects\SOC_Estimation_FE10.X\main.c
+"119 C:\Users\Melody\MPLABXProjects\SOC_Estimation_FE10.X\main.c
 [v _VOC VOC `(f  1 e 4 0 ]
-"124
+"123
 [v _hk hk `(f  1 e 4 0 ]
-"128
+"127
 [v _fk fk `(v  1 e 1 0 ]
-"145
+"144
 [v _EKF EKF `(v  1 e 1 0 ]
-"234
+"233
 [v _main main `(v  1 e 1 0 ]
 "3 C:\Users\Melody\MPLABXProjects\SOC_Estimation_FE10.X\matrix_mult.c
 [v _mat_init mat_init `(v  1 e 1 0 ]
@@ -631,66 +631,66 @@ channel_FVR_Buffer2 63
 [v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _UART1_ErrorHandler UART1_ErrorHandler `*.37(v  1 e 2 0 ]
-"234 C:\Users\Melody\MPLABXProjects\SOC_Estimation_FE10.X\main.c
+"233 C:\Users\Melody\MPLABXProjects\SOC_Estimation_FE10.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
 [s S812 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
-"260
+"259
 [v main@Cprime Cprime `S812  1 a 18 108 ]
-"248
+"247
 [v main@Eprime Eprime `S812  1 a 18 90 ]
-"241
+"240
 [v main@Aprime Aprime `S812  1 a 18 72 ]
-"307
+"306
 [v main@Pk_1 Pk_1 `S812  1 a 18 54 ]
-"303
+"302
 [v main@P P `S812  1 a 18 36 ]
-"293
+"292
 [v main@xhatk_1 xhatk_1 `S812  1 a 18 18 ]
-"264
+"263
 [v main@Cprime_transpose Cprime_transpose `S812  1 a 18 0 ]
-"297
+"296
 [v main@xhatCorrected xhatCorrected `S812  1 a 18 222 ]
-"290
+"289
 [v main@Qk1 Qk1 `S812  1 a 18 204 ]
-"255
+"254
 [v main@Fprime Fprime `S812  1 a 18 186 ]
-"311
+"310
 [v main@sub_mat_1 sub_mat_1 `S812  1 a 18 168 ]
-"299
+"298
 [v main@PCorrected PCorrected `S812  1 a 18 150 ]
-"315
+"314
 [v main@sub_mat_3 sub_mat_3 `S812  1 a 18 132 ]
-"313
+"312
 [v main@sub_mat_2 sub_mat_2 `S812  1 a 18 114 ]
-"252
+"251
 [v main@Eprime_transpose Eprime_transpose `S812  1 a 18 96 ]
-"245
+"244
 [v main@Aprime_transpose Aprime_transpose `S812  1 a 18 224 ]
-"301
+"300
 [v main@Lk Lk `S812  1 a 18 78 ]
-"295
+"294
 [v main@fk_ fk_ `S812  1 a 18 206 ]
-"288
+"287
 [v main@xhat xhat `S812  1 a 18 188 ]
-"271
+"270
 [v main@Rk Rk `f  1 a 4 242 ]
-"325
-[v main@V V `f  1 a 4 155 ]
-"323
-[v main@I I `f  1 a 4 151 ]
-"322
-[v main@Vc Vc `f  1 a 4 147 ]
-"321
-[v main@actualSOC actualSOC `f  1 a 4 143 ]
 "324
-[v main@Ik_1 Ik_1 `f  1 a 4 135 ]
+[v main@V V `f  1 a 4 155 ]
+"322
+[v main@I I `f  1 a 4 151 ]
+"321
+[v main@Vc Vc `f  1 a 4 147 ]
 "320
+[v main@actualSOC actualSOC `f  1 a 4 143 ]
+"323
+[v main@Ik_1 Ik_1 `f  1 a 4 135 ]
+"319
 [v main@i i `uc  1 a 1 246 ]
 [v main@j j `uc  1 a 1 159 ]
-"329
+"328
 [v main@cumulative_time cumulative_time `uc  1 a 1 134 ]
-"390
+"389
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
@@ -1045,56 +1045,56 @@ channel_FVR_Buffer2 63
 {
 "111
 } 0
-"145 C:\Users\Melody\MPLABXProjects\SOC_Estimation_FE10.X\main.c
+"144 C:\Users\Melody\MPLABXProjects\SOC_Estimation_FE10.X\main.c
 [v _EKF EKF `(v  1 e 1 0 ]
 {
-"180
+"179
 [v EKF@combined_error combined_error `f  1 a 4 127 ]
 [v EKF@error_estimate error_estimate `f  1 a 4 123 ]
-"195
+"194
 [v EKF@temp_val temp_val `f  1 a 4 119 ]
-"153
+"152
 [v EKF@row row `uc  1 a 1 133 ]
 [v EKF@col col `uc  1 a 1 132 ]
 [v EKF@index index `uc  1 a 1 131 ]
 [s S812 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
-"145
+"144
 [v EKF@xhatk_1 xhatk_1 `*.39S812  1 p 2 0 ]
 [v EKF@Pk_1 Pk_1 `*.39S812  1 p 2 2 ]
 [v EKF@I I `f  1 p 4 4 ]
 [v EKF@Ik_1 Ik_1 `f  1 p 4 8 ]
 [v EKF@V V `f  1 p 4 12 ]
 [v EKF@Voc0 Voc0 `f  1 p 4 16 ]
-"146
+"145
 [v EKF@Rk Rk `f  1 p 4 20 ]
 [v EKF@Aprime Aprime `*.39S812  1 p 2 24 ]
 [v EKF@Cprime Cprime `*.39S812  1 p 2 26 ]
 [v EKF@Eprime Eprime `*.39S812  1 p 2 28 ]
 [v EKF@Fprime Fprime `*.39S812  1 p 2 30 ]
-"147
+"146
 [v EKF@fk_ fk_ `*.39S812  1 p 2 32 ]
 [v EKF@dt dt `f  1 p 4 34 ]
 [v EKF@Cbat Cbat `f  1 p 4 38 ]
 [v EKF@Cc Cc `f  1 p 4 42 ]
 [v EKF@Rc Rc `f  1 p 4 46 ]
 [v EKF@Qk1 Qk1 `*.39S812  1 p 2 50 ]
-"148
+"147
 [v EKF@Aprime_transpose Aprime_transpose `*.39S812  1 p 2 52 ]
 [v EKF@Eprime_transpose Eprime_transpose `*.39S812  1 p 2 54 ]
-"149
+"148
 [v EKF@sub_mat_1 sub_mat_1 `*.39S812  1 p 2 56 ]
 [v EKF@sub_mat_2 sub_mat_2 `*.39S812  1 p 2 58 ]
 [v EKF@sub_mat_3 sub_mat_3 `*.39S812  1 p 2 60 ]
 [v EKF@xhat xhat `*.39S812  1 p 2 62 ]
-"150
+"149
 [v EKF@P P `*.39S812  1 p 2 64 ]
 [v EKF@Cprime_transpose Cprime_transpose `*.39S812  1 p 2 66 ]
 [v EKF@Lk Lk `*.39S812  1 p 2 68 ]
 [v EKF@R0 R0 `f  1 p 4 70 ]
-"151
+"150
 [v EKF@xhatCorrected xhatCorrected `*.39S812  1 p 2 74 ]
 [v EKF@PCorrected PCorrected `*.39S812  1 p 2 76 ]
-"221
+"220
 } 0
 "52 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\powf.c
 [v _powf powf `JJ(f  1 e 4 0 ]
@@ -1285,29 +1285,29 @@ channel_FVR_Buffer2 63
 [v mat_fill_zero@matrix matrix `*.39S812  1 p 2 0 ]
 "30
 } 0
-"124 C:\Users\Melody\MPLABXProjects\SOC_Estimation_FE10.X\main.c
+"123 C:\Users\Melody\MPLABXProjects\SOC_Estimation_FE10.X\main.c
 [v _hk hk `(f  1 e 4 0 ]
 {
 [v hk@SOC_val SOC_val `f  1 p 4 73 ]
 [v hk@I I `f  1 p 4 77 ]
 [v hk@Voc0 Voc0 `f  1 p 4 81 ]
 [v hk@R0 R0 `f  1 p 4 85 ]
-"126
+"125
 } 0
-"120
+"119
 [v _VOC VOC `(f  1 e 4 0 ]
 {
 [v VOC@SOC SOC `f  1 p 4 57 ]
 [v VOC@Voc0 Voc0 `f  1 p 4 61 ]
-"122
+"121
 } 0
-"128
+"127
 [v _fk fk `(v  1 e 1 0 ]
 {
-"129
+"128
 [v fk@array_mat array_mat `[2][1]f  1 a 8 99 ]
 [s S812 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
-"128
+"127
 [v fk@xhatk_1 xhatk_1 `*.39S812  1 p 2 75 ]
 [v fk@I I `f  1 p 4 77 ]
 [v fk@dt dt `f  1 p 4 81 ]
@@ -1315,7 +1315,7 @@ channel_FVR_Buffer2 63
 [v fk@Cc Cc `f  1 p 4 89 ]
 [v fk@Rc Rc `f  1 p 4 93 ]
 [v fk@fk_ fk_ `*.39S812  1 p 2 97 ]
-"139
+"138
 } 0
 "12 C:\Users\Melody\MPLABXProjects\SOC_Estimation_FE10.X\matrix_mult.c
 [v _mat_set mat_set `(v  1 e 1 0 ]

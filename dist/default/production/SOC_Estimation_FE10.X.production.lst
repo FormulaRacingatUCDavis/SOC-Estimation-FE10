@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
-                                                                                               Fri Apr 28 19:51:24 2023
+                                                                                               Sat Apr 29 12:00:35 2023
 
 Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
      1                           	processor	18LF26K83
@@ -1988,7 +1988,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   1974 ;;
   1975 ;; *************** function _main *****************
   1976 ;; Defined at:
-  1977 ;;		line 234 in file "main.c"
+  1977 ;;		line 233 in file "main.c"
   1978 ;; Parameters:    Size  Location     Type
   1979 ;;		None
   1980 ;; Auto vars:     Size  Location     Type
@@ -2065,13 +2065,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2046  0047D2                     _main:
   2047                           	callstack 22
   2048  0047D2                     
-  2049                           ;main.c: 236:     SYSTEM_Initialize();
+  2049                           ;main.c: 235:     SYSTEM_Initialize();
   2050  0047D2  ECA5  F047         	call	_SYSTEM_Initialize	;wreg free
   2051  0047D6                     
-  2052                           ;main.c: 238:     ADCC_DischargeSampleCapacitor();
+  2052                           ;main.c: 237:     ADCC_DischargeSampleCapacitor();
   2053  0047D6  ECE8  F047         	call	_ADCC_DischargeSampleCapacitor	;wreg free
   2054  0047DA                     
-  2055                           ;main.c: 241:     Matrix Aprime;;main.c: 242:     mat_init(2, 2, &Aprime);
+  2055                           ;main.c: 240:     Matrix Aprime;;main.c: 241:     mat_init(2, 2, &Aprime);
   2056  0047DA  0E02               	movlw	2
   2057  0047DC  6E09               	movwf	mat_init@columns^0,c
   2058  0047DE  0E48               	movlw	low main@Aprime
@@ -2081,7 +2081,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2062  0047E6  0E02               	movlw	2
   2063  0047E8  EC1D  F047         	call	_mat_init
   2064  0047EC                     
-  2065                           ;main.c: 243:     mat_set(1, 1, 1.0, &Aprime);
+  2065                           ;main.c: 242:     mat_set(1, 1, 1.0, &Aprime);
   2066  0047EC  0E01               	movlw	1
   2067  0047EE  0100               	movlb	0	; () banked
   2068  0047F0  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2100,7 +2100,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2081  00480A  0E01               	movlw	1
   2082  00480C  EC1E  F044         	call	_mat_set
   2083  004810                     
-  2084                           ;main.c: 244:     mat_set(2, 2, expf(-0.01 / (2400 * 0.015)), &Aprime);
+  2084                           ;main.c: 243:     mat_set(2, 2, expf(-0.01 / (2400 * 0.015)), &Aprime);
   2085  004810  0E02               	movlw	2
   2086  004812  0100               	movlb	0	; () banked
   2087  004814  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2125,7 +2125,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2106  004844  0E02               	movlw	2
   2107  004846  EC1E  F044         	call	_mat_set
   2108  00484A                     
-  2109                           ;main.c: 245:     Matrix Aprime_transpose;;main.c: 246:     mat_transpose(&Aprime, &Apri
+  2109                           ;main.c: 244:     Matrix Aprime_transpose;;main.c: 245:     mat_transpose(&Aprime, &Apri
       +                          me_transpose);
   2110  00484A  0E48               	movlw	low main@Aprime
   2111  00484C  0100               	movlb	0	; () banked
@@ -2138,7 +2138,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2118  00485A  6FAE               	movwf	(mat_transpose@result+1)& (0+255),b
   2119  00485C  EC8E  F03F         	call	_mat_transpose	;wreg free
   2120  004860                     
-  2121                           ;main.c: 248:     Matrix Eprime;;main.c: 249:     mat_init(2, 2, &Eprime);
+  2121                           ;main.c: 247:     Matrix Eprime;;main.c: 248:     mat_init(2, 2, &Eprime);
   2122  004860  0E02               	movlw	2
   2123  004862  6E09               	movwf	mat_init@columns^0,c
   2124  004864  0E5A               	movlw	low main@Eprime
@@ -2148,7 +2148,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2128  00486C  0E02               	movlw	2
   2129  00486E  EC1D  F047         	call	_mat_init
   2130  004872                     
-  2131                           ;main.c: 250:     mat_set(1, 1, 1.0, &Eprime);
+  2131                           ;main.c: 249:     mat_set(1, 1, 1.0, &Eprime);
   2132  004872  0E01               	movlw	1
   2133  004874  0100               	movlb	0	; () banked
   2134  004876  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2167,7 +2167,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2147  004890  0E01               	movlw	1
   2148  004892  EC1E  F044         	call	_mat_set
   2149  004896                     
-  2150                           ;main.c: 251:     mat_set(2, 2, 1.0, &Eprime);
+  2150                           ;main.c: 250:     mat_set(2, 2, 1.0, &Eprime);
   2151  004896  0E02               	movlw	2
   2152  004898  0100               	movlb	0	; () banked
   2153  00489A  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2186,7 +2186,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2166  0048B4  0E02               	movlw	2
   2167  0048B6  EC1E  F044         	call	_mat_set
   2168  0048BA                     
-  2169                           ;main.c: 252:     Matrix Eprime_transpose;;main.c: 253:     mat_transpose(&Eprime, &Epri
+  2169                           ;main.c: 251:     Matrix Eprime_transpose;;main.c: 252:     mat_transpose(&Eprime, &Epri
       +                          me_transpose);
   2170  0048BA  0E5A               	movlw	low main@Eprime
   2171  0048BC  0100               	movlb	0	; () banked
@@ -2199,7 +2199,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2178  0048CA  6FAE               	movwf	(mat_transpose@result+1)& (0+255),b
   2179  0048CC  EC8E  F03F         	call	_mat_transpose	;wreg free
   2180  0048D0                     
-  2181                           ;main.c: 255:     Matrix Fprime;;main.c: 256:     mat_init(2, 2, &Fprime);
+  2181                           ;main.c: 254:     Matrix Fprime;;main.c: 255:     mat_init(2, 2, &Fprime);
   2182  0048D0  0E02               	movlw	2
   2183  0048D2  6E09               	movwf	mat_init@columns^0,c
   2184  0048D4  0EBA               	movlw	low main@Fprime
@@ -2209,7 +2209,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2188  0048DC  0E02               	movlw	2
   2189  0048DE  EC1D  F047         	call	_mat_init
   2190  0048E2                     
-  2191                           ;main.c: 257:     mat_set(1, 1, 1.0, &Fprime);
+  2191                           ;main.c: 256:     mat_set(1, 1, 1.0, &Fprime);
   2192  0048E2  0E01               	movlw	1
   2193  0048E4  0100               	movlb	0	; () banked
   2194  0048E6  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2228,7 +2228,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2207  004900  0E01               	movlw	1
   2208  004902  EC1E  F044         	call	_mat_set
   2209  004906                     
-  2210                           ;main.c: 258:     mat_set(2, 2, 1.0, &Fprime);
+  2210                           ;main.c: 257:     mat_set(2, 2, 1.0, &Fprime);
   2211  004906  0E02               	movlw	2
   2212  004908  0100               	movlb	0	; () banked
   2213  00490A  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2247,7 +2247,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2226  004924  0E02               	movlw	2
   2227  004926  EC1E  F044         	call	_mat_set
   2228  00492A                     
-  2229                           ;main.c: 260:     Matrix Cprime;;main.c: 261:     mat_init(2, 1, &Cprime);
+  2229                           ;main.c: 259:     Matrix Cprime;;main.c: 260:     mat_init(2, 1, &Cprime);
   2230  00492A  0E01               	movlw	1
   2231  00492C  6E09               	movwf	mat_init@columns^0,c
   2232  00492E  0E6C               	movlw	low main@Cprime
@@ -2257,7 +2257,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2236  004936  0E02               	movlw	2
   2237  004938  EC1D  F047         	call	_mat_init
   2238  00493C                     
-  2239                           ;main.c: 262:     mat_set(1, 1, 0.007, &Cprime);
+  2239                           ;main.c: 261:     mat_set(1, 1, 0.007, &Cprime);
   2240  00493C  0E01               	movlw	1
   2241  00493E  0100               	movlb	0	; () banked
   2242  004940  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2276,7 +2276,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2255  00495A  0E01               	movlw	1
   2256  00495C  EC1E  F044         	call	_mat_set
   2257  004960                     
-  2258                           ;main.c: 263:     mat_set(2, 1, -1.0, &Cprime);
+  2258                           ;main.c: 262:     mat_set(2, 1, -1.0, &Cprime);
   2259  004960  0E01               	movlw	1
   2260  004962  0100               	movlb	0	; () banked
   2261  004964  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2295,7 +2295,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2274  00497E  0E02               	movlw	2
   2275  004980  EC1E  F044         	call	_mat_set
   2276  004984                     
-  2277                           ;main.c: 264:     Matrix Cprime_transpose;;main.c: 265:     mat_init(2, 1, &Cprime_trans
+  2277                           ;main.c: 263:     Matrix Cprime_transpose;;main.c: 264:     mat_init(2, 1, &Cprime_trans
       +                          pose);
   2278  004984  0E01               	movlw	1
   2279  004986  6E09               	movwf	mat_init@columns^0,c
@@ -2306,7 +2306,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2284  004990  0E02               	movlw	2
   2285  004992  EC1D  F047         	call	_mat_init
   2286  004996                     
-  2287                           ;main.c: 266:     mat_set(1, 1, mat_get(1, 1, &Cprime), &Cprime_transpose);
+  2287                           ;main.c: 265:     mat_set(1, 1, mat_get(1, 1, &Cprime), &Cprime_transpose);
   2288  004996  0E01               	movlw	1
   2289  004998  0100               	movlb	0	; () banked
   2290  00499A  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2330,7 +2330,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2308  0049C8  0E01               	movlw	1
   2309  0049CA  EC1E  F044         	call	_mat_set
   2310  0049CE                     
-  2311                           ;main.c: 267:     mat_set(2, 1, mat_get(1, 2, &Cprime), &Cprime_transpose);
+  2311                           ;main.c: 266:     mat_set(2, 1, mat_get(1, 2, &Cprime), &Cprime_transpose);
   2312  0049CE  0E01               	movlw	1
   2313  0049D0  0100               	movlb	0	; () banked
   2314  0049D2  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2354,7 +2354,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2332  004A00  0E02               	movlw	2
   2333  004A02  EC1E  F044         	call	_mat_set
   2334  004A06                     
-  2335                           ;main.c: 271:  float Rk = powf(10,-4);
+  2335                           ;main.c: 270:  float Rk = powf(10,-4);
   2336  004A06  0E00               	movlw	0
   2337  004A08  0100               	movlb	0	; () banked
   2338  004A0A  6F84               	movwf	powf@x& (0+255),b
@@ -2378,7 +2378,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2356  004A34  C086  F1F4         	movff	?_powf+2,main@Rk+2
   2357  004A38  C087  F1F5         	movff	?_powf+3,main@Rk+3
   2358  004A3C                     
-  2359                           ;main.c: 288:     Matrix xhat;;main.c: 289:     mat_init(2, 1, &xhat);
+  2359                           ;main.c: 287:     Matrix xhat;;main.c: 288:     mat_init(2, 1, &xhat);
   2360  004A3C  0E01               	movlw	1
   2361  004A3E  6E09               	movwf	mat_init@columns^0,c
   2362  004A40  0EBC               	movlw	low main@xhat
@@ -2388,7 +2388,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2366  004A48  0E02               	movlw	2
   2367  004A4A  EC1D  F047         	call	_mat_init
   2368  004A4E                     
-  2369                           ;main.c: 290:  Matrix Qk1;;main.c: 291:     mat_init(2, 2, &Qk1);
+  2369                           ;main.c: 289:  Matrix Qk1;;main.c: 290:     mat_init(2, 2, &Qk1);
   2370  004A4E  0E02               	movlw	2
   2371  004A50  6E09               	movwf	mat_init@columns^0,c
   2372  004A52  0ECC               	movlw	low main@Qk1
@@ -2398,7 +2398,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2376  004A5A  0E02               	movlw	2
   2377  004A5C  EC1D  F047         	call	_mat_init
   2378  004A60                     
-  2379                           ;main.c: 292:     mat_set(1, 1, 2.5 * powf(10,-7), &Qk1);
+  2379                           ;main.c: 291:     mat_set(1, 1, 2.5 * powf(10,-7), &Qk1);
   2380  004A60  0E00               	movlw	0
   2381  004A62  0100               	movlb	0	; () banked
   2382  004A64  6F88               	movwf	powf@y& (0+255),b
@@ -2422,7 +2422,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2400  004A8E  C086  F0ED         	movff	?_powf+2,_main$2292+2
   2401  004A92  C087  F0EE         	movff	?_powf+3,_main$2292+3
   2402  004A96                     
-  2403                           ;main.c: 292:     mat_set(1, 1, 2.5 * powf(10,-7), &Qk1);
+  2403                           ;main.c: 291:     mat_set(1, 1, 2.5 * powf(10,-7), &Qk1);
   2404  004A96  0E01               	movlw	1
   2405  004A98  0100               	movlb	0	; () banked
   2406  004A9A  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2451,7 +2451,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2429  004ADA  0E01               	movlw	1
   2430  004ADC  EC1E  F044         	call	_mat_set
   2431  004AE0                     
-  2432                           ;main.c: 293:     Matrix xhatk_1;;main.c: 294:     mat_init(2, 1, &xhatk_1);
+  2432                           ;main.c: 292:     Matrix xhatk_1;;main.c: 293:     mat_init(2, 1, &xhatk_1);
   2433  004AE0  0E01               	movlw	1
   2434  004AE2  6E09               	movwf	mat_init@columns^0,c
   2435  004AE4  0E12               	movlw	low main@xhatk_1
@@ -2461,7 +2461,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2439  004AEC  0E02               	movlw	2
   2440  004AEE  EC1D  F047         	call	_mat_init
   2441  004AF2                     
-  2442                           ;main.c: 295:     Matrix fk_;;main.c: 296:     mat_init(2, 1, &fk_);
+  2442                           ;main.c: 294:     Matrix fk_;;main.c: 295:     mat_init(2, 1, &fk_);
   2443  004AF2  0E01               	movlw	1
   2444  004AF4  6E09               	movwf	mat_init@columns^0,c
   2445  004AF6  0ECE               	movlw	low main@fk_
@@ -2471,7 +2471,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2449  004AFE  0E02               	movlw	2
   2450  004B00  EC1D  F047         	call	_mat_init
   2451  004B04                     
-  2452                           ;main.c: 297:     Matrix xhatCorrected;;main.c: 298:     mat_init(2, 1, &xhatCorrected);
+  2452                           ;main.c: 296:     Matrix xhatCorrected;;main.c: 297:     mat_init(2, 1, &xhatCorrected);
   2453  004B04  0E01               	movlw	1
   2454  004B06  6E09               	movwf	mat_init@columns^0,c
   2455  004B08  0EDE               	movlw	low main@xhatCorrected
@@ -2481,7 +2481,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2459  004B10  0E02               	movlw	2
   2460  004B12  EC1D  F047         	call	_mat_init
   2461  004B16                     
-  2462                           ;main.c: 299:     Matrix PCorrected;;main.c: 300:     mat_init(2, 2, &PCorrected);
+  2462                           ;main.c: 298:     Matrix PCorrected;;main.c: 299:     mat_init(2, 2, &PCorrected);
   2463  004B16  0E02               	movlw	2
   2464  004B18  6E09               	movwf	mat_init@columns^0,c
   2465  004B1A  0E96               	movlw	low main@PCorrected
@@ -2491,7 +2491,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2469  004B22  0E02               	movlw	2
   2470  004B24  EC1D  F047         	call	_mat_init
   2471  004B28                     
-  2472                           ;main.c: 301:     Matrix Lk;;main.c: 302:     mat_init(2, 1, &Lk);
+  2472                           ;main.c: 300:     Matrix Lk;;main.c: 301:     mat_init(2, 1, &Lk);
   2473  004B28  0E01               	movlw	1
   2474  004B2A  6E09               	movwf	mat_init@columns^0,c
   2475  004B2C  0E4E               	movlw	low main@Lk
@@ -2501,7 +2501,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2479  004B34  0E02               	movlw	2
   2480  004B36  EC1D  F047         	call	_mat_init
   2481  004B3A                     
-  2482                           ;main.c: 303:     Matrix P;;main.c: 304:     mat_init(2, 2, &P);
+  2482                           ;main.c: 302:     Matrix P;;main.c: 303:     mat_init(2, 2, &P);
   2483  004B3A  0E02               	movlw	2
   2484  004B3C  6E09               	movwf	mat_init@columns^0,c
   2485  004B3E  0E24               	movlw	low main@P
@@ -2511,7 +2511,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2489  004B46  0E02               	movlw	2
   2490  004B48  EC1D  F047         	call	_mat_init
   2491  004B4C                     
-  2492                           ;main.c: 305:     mat_set(1, 1, Rk, &P);
+  2492                           ;main.c: 304:     mat_set(1, 1, Rk, &P);
   2493  004B4C  0E01               	movlw	1
   2494  004B4E  0100               	movlb	0	; () banked
   2495  004B50  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2526,7 +2526,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2504  004B6A  0E01               	movlw	1
   2505  004B6C  EC1E  F044         	call	_mat_set
   2506  004B70                     
-  2507                           ;main.c: 306:     mat_set(2, 2, Rk, &P);
+  2507                           ;main.c: 305:     mat_set(2, 2, Rk, &P);
   2508  004B70  0E02               	movlw	2
   2509  004B72  0100               	movlb	0	; () banked
   2510  004B74  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2541,7 +2541,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2519  004B8E  0E02               	movlw	2
   2520  004B90  EC1E  F044         	call	_mat_set
   2521  004B94                     
-  2522                           ;main.c: 307:     Matrix Pk_1;;main.c: 308:     mat_init(2, 2, &Pk_1);
+  2522                           ;main.c: 306:     Matrix Pk_1;;main.c: 307:     mat_init(2, 2, &Pk_1);
   2523  004B94  0E02               	movlw	2
   2524  004B96  6E09               	movwf	mat_init@columns^0,c
   2525  004B98  0E36               	movlw	low main@Pk_1
@@ -2551,7 +2551,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2529  004BA0  0E02               	movlw	2
   2530  004BA2  EC1D  F047         	call	_mat_init
   2531  004BA6                     
-  2532                           ;main.c: 309:     mat_set(1, 1, Rk, &Pk_1);
+  2532                           ;main.c: 308:     mat_set(1, 1, Rk, &Pk_1);
   2533  004BA6  0E01               	movlw	1
   2534  004BA8  0100               	movlb	0	; () banked
   2535  004BAA  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2566,7 +2566,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2544  004BC4  0E01               	movlw	1
   2545  004BC6  EC1E  F044         	call	_mat_set
   2546  004BCA                     
-  2547                           ;main.c: 310:     mat_set(2, 2, Rk, &Pk_1);
+  2547                           ;main.c: 309:     mat_set(2, 2, Rk, &Pk_1);
   2548  004BCA  0E02               	movlw	2
   2549  004BCC  0100               	movlb	0	; () banked
   2550  004BCE  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2581,7 +2581,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2559  004BE8  0E02               	movlw	2
   2560  004BEA  EC1E  F044         	call	_mat_set
   2561  004BEE                     
-  2562                           ;main.c: 311:     Matrix sub_mat_1;;main.c: 312:     mat_init(2, 2, &sub_mat_1);
+  2562                           ;main.c: 310:     Matrix sub_mat_1;;main.c: 311:     mat_init(2, 2, &sub_mat_1);
   2563  004BEE  0E02               	movlw	2
   2564  004BF0  6E09               	movwf	mat_init@columns^0,c
   2565  004BF2  0EA8               	movlw	low main@sub_mat_1
@@ -2591,7 +2591,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2569  004BFA  0E02               	movlw	2
   2570  004BFC  EC1D  F047         	call	_mat_init
   2571  004C00                     
-  2572                           ;main.c: 313:     Matrix sub_mat_2;;main.c: 314:     mat_init(2, 2, &sub_mat_2);
+  2572                           ;main.c: 312:     Matrix sub_mat_2;;main.c: 313:     mat_init(2, 2, &sub_mat_2);
   2573  004C00  0E02               	movlw	2
   2574  004C02  6E09               	movwf	mat_init@columns^0,c
   2575  004C04  0E72               	movlw	low main@sub_mat_2
@@ -2601,7 +2601,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2579  004C0C  0E02               	movlw	2
   2580  004C0E  EC1D  F047         	call	_mat_init
   2581  004C12                     
-  2582                           ;main.c: 315:     Matrix sub_mat_3;;main.c: 316:     mat_init(2, 2, &sub_mat_3);
+  2582                           ;main.c: 314:     Matrix sub_mat_3;;main.c: 315:     mat_init(2, 2, &sub_mat_3);
   2583  004C12  0E02               	movlw	2
   2584  004C14  6E09               	movwf	mat_init@columns^0,c
   2585  004C16  0E84               	movlw	low main@sub_mat_3
@@ -2611,7 +2611,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2589  004C1E  0E02               	movlw	2
   2590  004C20  EC1D  F047         	call	_mat_init
   2591  004C24                     
-  2592                           ;main.c: 320:  uint8_t i, j;;main.c: 321:     float actualSOC = 1.0;
+  2592                           ;main.c: 319:  uint8_t i, j;;main.c: 320:     float actualSOC = 1.0;
   2593  004C24  0E00               	movlw	0
   2594  004C26  0100               	movlb	0	; () banked
   2595  004C28  6FEF               	movwf	main@actualSOC& (0+255),b
@@ -2623,7 +2623,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2601  004C34  6FF2               	movwf	(main@actualSOC+3)& (0+255),b
   2602  004C36                     
   2603                           ; BSR set to: 0
-  2604                           ;main.c: 322:     float Vc = 0.0;
+  2604                           ;main.c: 321:     float Vc = 0.0;
   2605  004C36  0E00               	movlw	0
   2606  004C38  6FF3               	movwf	main@Vc& (0+255),b
   2607  004C3A  0E00               	movlw	0
@@ -2634,7 +2634,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2612  004C44  6FF6               	movwf	(main@Vc+3)& (0+255),b
   2613  004C46                     
   2614                           ; BSR set to: 0
-  2615                           ;main.c: 323:  float I = 0.0;
+  2615                           ;main.c: 322:  float I = 0.0;
   2616  004C46  0E00               	movlw	0
   2617  004C48  6FF7               	movwf	main@I& (0+255),b
   2618  004C4A  0E00               	movlw	0
@@ -2645,7 +2645,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2623  004C54  6FFA               	movwf	(main@I+3)& (0+255),b
   2624  004C56                     
   2625                           ; BSR set to: 0
-  2626                           ;main.c: 324:  float Ik_1 = 0.0;
+  2626                           ;main.c: 323:  float Ik_1 = 0.0;
   2627  004C56  0E00               	movlw	0
   2628  004C58  6FE7               	movwf	main@Ik_1& (0+255),b
   2629  004C5A  0E00               	movlw	0
@@ -2656,7 +2656,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2634  004C64  6FEA               	movwf	(main@Ik_1+3)& (0+255),b
   2635  004C66                     
   2636                           ; BSR set to: 0
-  2637                           ;main.c: 325:  float V = 0.0;
+  2637                           ;main.c: 324:  float V = 0.0;
   2638  004C66  0E00               	movlw	0
   2639  004C68  6FFB               	movwf	main@V& (0+255),b
   2640  004C6A  0E00               	movlw	0
@@ -2667,7 +2667,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2645  004C74  6FFE               	movwf	(main@V+3)& (0+255),b
   2646  004C76                     
   2647                           ; BSR set to: 0
-  2648                           ;main.c: 326:     mat_set(1, 1, actualSOC, &xhatk_1);
+  2648                           ;main.c: 325:     mat_set(1, 1, actualSOC, &xhatk_1);
   2649  004C76  0E01               	movlw	1
   2650  004C78  6F9F               	movwf	mat_set@column& (0+255),b
   2651  004C7A  C0EF  F0A0         	movff	main@actualSOC,mat_set@element
@@ -2681,7 +2681,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2659  004C92  0E01               	movlw	1
   2660  004C94  EC1E  F044         	call	_mat_set
   2661  004C98                     
-  2662                           ;main.c: 327:  mat_set(2, 1, Vc, &xhatk_1);
+  2662                           ;main.c: 326:  mat_set(2, 1, Vc, &xhatk_1);
   2663  004C98  0E01               	movlw	1
   2664  004C9A  0100               	movlb	0	; () banked
   2665  004C9C  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2696,13 +2696,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2674  004CB6  0E02               	movlw	2
   2675  004CB8  EC1E  F044         	call	_mat_set
   2676  004CBC                     
-  2677                           ;main.c: 329:     uint8_t cumulative_time = 0;
+  2677                           ;main.c: 328:     uint8_t cumulative_time = 0;
   2678  004CBC  0E00               	movlw	0
   2679  004CBE  0100               	movlb	0	; () banked
   2680  004CC0  6FE6               	movwf	main@cumulative_time& (0+255),b
   2681  004CC2                     l6691:
   2682                           
-  2683                           ;main.c: 350:         actualSOC = 0.97;
+  2683                           ;main.c: 349:         actualSOC = 0.97;
   2684  004CC2  0EEC               	movlw	236
   2685  004CC4  0100               	movlb	0	; () banked
   2686  004CC6  6FEF               	movwf	main@actualSOC& (0+255),b
@@ -2714,7 +2714,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2692  004CD2  6FF2               	movwf	(main@actualSOC+3)& (0+255),b
   2693  004CD4                     
   2694                           ; BSR set to: 0
-  2695                           ;main.c: 351:         Vc = 0.2;
+  2695                           ;main.c: 350:         Vc = 0.2;
   2696  004CD4  0ECD               	movlw	205
   2697  004CD6  6FF3               	movwf	main@Vc& (0+255),b
   2698  004CD8  0ECC               	movlw	204
@@ -2725,7 +2725,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2703  004CE2  6FF6               	movwf	(main@Vc+3)& (0+255),b
   2704  004CE4                     
   2705                           ; BSR set to: 0
-  2706                           ;main.c: 352:         V = 0.04;
+  2706                           ;main.c: 351:         V = 0.04;
   2707  004CE4  0E0A               	movlw	10
   2708  004CE6  6FFB               	movwf	main@V& (0+255),b
   2709  004CE8  0ED7               	movlw	215
@@ -2736,7 +2736,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2714  004CF2  6FFE               	movwf	(main@V+3)& (0+255),b
   2715  004CF4                     
   2716                           ; BSR set to: 0
-  2717                           ;main.c: 353:         I = 0.003;
+  2717                           ;main.c: 352:         I = 0.003;
   2718  004CF4  0EA6               	movlw	166
   2719  004CF6  6FF7               	movwf	main@I& (0+255),b
   2720  004CF8  0E9B               	movlw	155
@@ -2747,7 +2747,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2725  004D02  6FFA               	movwf	(main@I+3)& (0+255),b
   2726  004D04                     
   2727                           ; BSR set to: 0
-  2728                           ;main.c: 358:         EKF(&xhatk_1, &Pk_1, I, Ik_1, V, 3.435, Rk, &Aprime, &Cprime, &Epr
+  2728                           ;main.c: 357:         EKF(&xhatk_1, &Pk_1, I, Ik_1, V, 3.435, Rk, &Aprime, &Cprime, &Epr
       +                          ime,
   2729  004D04  0E12               	movlw	low main@xhatk_1
   2730  004D06  0102               	movlb	2	; () banked
@@ -2892,7 +2892,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2869  004E3C  6F4D               	movwf	(EKF@PCorrected+1)& (0+255),b
   2870  004E3E  ECA8  F027         	call	_EKF	;wreg free
   2871  004E42                     
-  2872                           ;main.c: 366:         for (i = 1; i <= 2; i++) {
+  2872                           ;main.c: 365:         for (i = 1; i <= 2; i++) {
   2873  004E42  0E01               	movlw	1
   2874  004E44  0101               	movlb	1	; () banked
   2875  004E46  6FF6               	movwf	main@i& (0+255),b
@@ -2910,7 +2910,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2887  004E5C                     l6707:
   2888                           
   2889                           ; BSR set to: 1
-  2890                           ;main.c: 368:             mat_set(i, 1, mat_get(i, 1, &xhatCorrected), &xhatk_1);
+  2890                           ;main.c: 367:             mat_set(i, 1, mat_get(i, 1, &xhatCorrected), &xhatk_1);
   2891  004E5C  0E01               	movlw	1
   2892  004E5E  0100               	movlb	0	; () banked
   2893  004E60  6F9F               	movwf	mat_set@column& (0+255),b
@@ -2936,7 +2936,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2913  004E92  51F6               	movf	main@i& (0+255),w,b
   2914  004E94  EC1E  F044         	call	_mat_set
   2915  004E98                     
-  2916                           ;main.c: 371:             for (j = 1; j <= 2; j++) {
+  2916                           ;main.c: 370:             for (j = 1; j <= 2; j++) {
   2917  004E98  0E01               	movlw	1
   2918  004E9A  0100               	movlb	0	; () banked
   2919  004E9C  6FFF               	movwf	main@j& (0+255),b
@@ -2954,7 +2954,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2931  004EB2                     l6715:
   2932                           
   2933                           ; BSR set to: 0
-  2934                           ;main.c: 373:                 mat_set(i, j, mat_get(i, j, &PCorrected), &Pk_1);
+  2934                           ;main.c: 372:                 mat_set(i, j, mat_get(i, j, &PCorrected), &Pk_1);
   2935  004EB2  C0FF  F09F         	movff	main@j,mat_set@column
   2936  004EB6  C0FF  F007         	movff	main@j,mat_get@column
   2937  004EBA  0E96               	movlw	low main@PCorrected
@@ -2977,21 +2977,21 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2954  004EE6  51F6               	movf	main@i& (0+255),w,b
   2955  004EE8  EC1E  F044         	call	_mat_set
   2956  004EEC                     
-  2957                           ;main.c: 374:             }
+  2957                           ;main.c: 373:             }
   2958  004EEC  0100               	movlb	0	; () banked
   2959  004EEE  2BFF               	incf	main@j& (0+255),f,b
   2960  004EF0  EF4F  F027         	goto	l6711
   2961  004EF4                     l6721:
   2962                           
   2963                           ; BSR set to: 0
-  2964                           ;main.c: 375:         }
+  2964                           ;main.c: 374:         }
   2965  004EF4  0101               	movlb	1	; () banked
   2966  004EF6  2BF6               	incf	main@i& (0+255),f,b
   2967  004EF8  EF24  F027         	goto	l6703
   2968  004EFC                     l6725:
   2969                           
   2970                           ; BSR set to: 1
-  2971                           ;main.c: 378:         if (TMR0_HasOverflowOccured()) {
+  2971                           ;main.c: 377:         if (TMR0_HasOverflowOccured()) {
   2972  004EFC  ECBE  F047         	call	_TMR0_HasOverflowOccured	;wreg free
   2973  004F00  0900               	iorlw	0
   2974  004F02  B4D8               	btfsc	status,2,c
@@ -3001,13 +3001,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   2978  004F0C  EF61  F026         	goto	l6691
   2979  004F10                     u7130:
   2980  004F10                     
-  2981                           ;main.c: 379:             cumulative_time += 10;
+  2981                           ;main.c: 378:             cumulative_time += 10;
   2982  004F10  0E0A               	movlw	10
   2983  004F12  0100               	movlb	0	; () banked
   2984  004F14  27E6               	addwf	main@cumulative_time& (0+255),f,b
   2985  004F16                     
   2986                           ; BSR set to: 0
-  2987                           ;main.c: 383:             printf("%.6lf", mat_get(1, 1, &xhatCorrected));
+  2987                           ;main.c: 382:             printf("%.6lf", mat_get(1, 1, &xhatCorrected));
   2988  004F16  0E99               	movlw	low STR_1
   2989  004F18  6FD9               	movwf	printf@fmt& (0+255),b
   2990  004F1A  0E10               	movlw	high STR_1
@@ -3026,7 +3026,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   3003  004F3C  C00A  F0DE         	movff	?_mat_get+3,?_printf+5
   3004  004F40  EC61  F047         	call	_printf	;wreg free
   3005  004F44                     
-  3006                           ;main.c: 385:             TMR0_Initialize();
+  3006                           ;main.c: 384:             TMR0_Initialize();
   3007  004F44  ECC9  F047         	call	_TMR0_Initialize	;wreg free
   3008  004F48  EF61  F026         	goto	l6691
   3009  004F4C  EFFE  F07F         	goto	start
@@ -9162,8 +9162,8 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   8827  008A2C  0E00               	movlw	0
   8828  008A2E  6FF4               	movwf	244,b	;volatile
   8829                           
-  8830                           ;mcc_generated_files/uart1.c: 100:     U1BRGL = 0x19;
-  8831  008A30  0E19               	movlw	25
+  8830                           ;mcc_generated_files/uart1.c: 100:     U1BRGL = 0x01;
+  8831  008A30  0E01               	movlw	1
   8832  008A32  6FF5               	movwf	245,b	;volatile
   8833                           
   8834                           ;mcc_generated_files/uart1.c: 103:     U1BRGH = 0x00;
@@ -9854,7 +9854,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9477                           
   9478 ;; *************** function _EKF *****************
   9479 ;; Defined at:
-  9480 ;;		line 145 in file "main.c"
+  9480 ;;		line 144 in file "main.c"
   9481 ;; Parameters:    Size  Location     Type
   9482 ;;  xhatk_1         2    0[BANK2 ] PTR struct MatrixStruct
   9483 ;;		 -> main@xhatk_1(18), 
@@ -9953,12 +9953,12 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9571  004F50                     _EKF:
   9572                           	callstack 27
   9573  004F50                     
-  9574                           ;main.c: 145: void EKF(Matrix* xhatk_1, Matrix* Pk_1, float I, float Ik_1, float V, floa
-      +                          t Voc0,;main.c: 146:  float Rk, Matrix* Aprime, Matrix* Cprime, Matrix* Eprime, Matrix* 
-      +                          Fprime,;main.c: 147:  Matrix* fk_, float dt, float Cbat, float Cc, float Rc, Matrix* Qk1
-      +                          ,;main.c: 148:  Matrix* Aprime_transpose, Matrix* Eprime_transpose,;main.c: 149:  Matrix
-      +                          * sub_mat_1, Matrix* sub_mat_2, Matrix* sub_mat_3, Matrix* xhat,;main.c: 150:  Matrix* P
-      +                          , Matrix* Cprime_transpose, Matrix* Lk, float R0,;main.c: 151:  Matrix* xhatCorrected, M
+  9574                           ;main.c: 144: void EKF(Matrix* xhatk_1, Matrix* Pk_1, float I, float Ik_1, float V, floa
+      +                          t Voc0,;main.c: 145:  float Rk, Matrix* Aprime, Matrix* Cprime, Matrix* Eprime, Matrix* 
+      +                          Fprime,;main.c: 146:  Matrix* fk_, float dt, float Cbat, float Cc, float Rc, Matrix* Qk1
+      +                          ,;main.c: 147:  Matrix* Aprime_transpose, Matrix* Eprime_transpose,;main.c: 148:  Matrix
+      +                          * sub_mat_1, Matrix* sub_mat_2, Matrix* sub_mat_3, Matrix* xhat,;main.c: 149:  Matrix* P
+      +                          , Matrix* Cprime_transpose, Matrix* Lk, float R0,;main.c: 150:  Matrix* xhatCorrected, M
       +                          atrix* PCorrected) {
   9575  004F50  C200  F0AB         	movff	EKF@xhatk_1,fk@xhatk_1
   9576  004F54  C201  F0AC         	movff	EKF@xhatk_1+1,fk@xhatk_1+1
@@ -9986,14 +9986,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9598  004FAC  C221  F0C2         	movff	EKF@fk_+1,fk@fk_+1
   9599  004FB0  ECCF  F03A         	call	_fk	;wreg free
   9600  004FB4                     
-  9601                           ;main.c: 157:     for (row = 1; row <= 2; row++) {
+  9601                           ;main.c: 156:     for (row = 1; row <= 2; row++) {
   9602  004FB4  0E01               	movlw	1
   9603  004FB6  0100               	movlb	0	; () banked
   9604  004FB8  6FE5               	movwf	EKF@row& (0+255),b
   9605  004FBA                     l6371:
   9606                           
   9607                           ; BSR set to: 0
-  9608                           ;main.c: 158:         mat_set(row, 1, mat_get(row, 1, fk_), xhat);
+  9608                           ;main.c: 157:         mat_set(row, 1, mat_get(row, 1, fk_), xhat);
   9609  004FBA  0E01               	movlw	1
   9610  004FBC  6F9F               	movwf	mat_set@column& (0+255),b
   9611  004FBE  0E01               	movlw	1
@@ -10012,7 +10012,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9624  004FEA  51E5               	movf	EKF@row& (0+255),w,b
   9625  004FEC  EC1E  F044         	call	_mat_set
   9626  004FF0                     
-  9627                           ;main.c: 159:     }
+  9627                           ;main.c: 158:     }
   9628  004FF0  0100               	movlb	0	; () banked
   9629  004FF2  2BE5               	incf	EKF@row& (0+255),f,b
   9630  004FF4                     
@@ -10026,7 +10026,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9638  005004                     u6900:
   9639  005004                     
   9640                           ; BSR set to: 0
-  9641                           ;main.c: 163:  mat_multiply(Aprime, Pk_1, sub_mat_1);
+  9641                           ;main.c: 162:  mat_multiply(Aprime, Pk_1, sub_mat_1);
   9642  005004  C218  F0AB         	movff	EKF@Aprime,mat_multiply@matrixA
   9643  005008  C219  F0AC         	movff	EKF@Aprime+1,mat_multiply@matrixA+1
   9644  00500C  C202  F0AD         	movff	EKF@Pk_1,mat_multiply@matrixB
@@ -10035,7 +10035,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9647  005018  C239  F0B0         	movff	EKF@sub_mat_1+1,mat_multiply@matrixC+1
   9648  00501C  ECF4  F03C         	call	_mat_multiply	;wreg free
   9649                           
-  9650                           ;main.c: 164:  mat_multiply(sub_mat_1, Aprime_transpose, sub_mat_2);
+  9650                           ;main.c: 163:  mat_multiply(sub_mat_1, Aprime_transpose, sub_mat_2);
   9651  005020  C238  F0AB         	movff	EKF@sub_mat_1,mat_multiply@matrixA
   9652  005024  C239  F0AC         	movff	EKF@sub_mat_1+1,mat_multiply@matrixA+1
   9653  005028  C234  F0AD         	movff	EKF@Aprime_transpose,mat_multiply@matrixB
@@ -10044,7 +10044,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9656  005034  C23B  F0B0         	movff	EKF@sub_mat_2+1,mat_multiply@matrixC+1
   9657  005038  ECF4  F03C         	call	_mat_multiply	;wreg free
   9658                           
-  9659                           ;main.c: 167:  mat_multiply(Eprime, Qk1, sub_mat_1);
+  9659                           ;main.c: 166:  mat_multiply(Eprime, Qk1, sub_mat_1);
   9660  00503C  C21C  F0AB         	movff	EKF@Eprime,mat_multiply@matrixA
   9661  005040  C21D  F0AC         	movff	EKF@Eprime+1,mat_multiply@matrixA+1
   9662  005044  C232  F0AD         	movff	EKF@Qk1,mat_multiply@matrixB
@@ -10053,7 +10053,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9665  005050  C239  F0B0         	movff	EKF@sub_mat_1+1,mat_multiply@matrixC+1
   9666  005054  ECF4  F03C         	call	_mat_multiply	;wreg free
   9667                           
-  9668                           ;main.c: 168:  mat_multiply(sub_mat_1, Eprime_transpose, sub_mat_3);
+  9668                           ;main.c: 167:  mat_multiply(sub_mat_1, Eprime_transpose, sub_mat_3);
   9669  005058  C238  F0AB         	movff	EKF@sub_mat_1,mat_multiply@matrixA
   9670  00505C  C239  F0AC         	movff	EKF@sub_mat_1+1,mat_multiply@matrixA+1
   9671  005060  C236  F0AD         	movff	EKF@Eprime_transpose,mat_multiply@matrixB
@@ -10062,14 +10062,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9674  00506C  C23D  F0B0         	movff	EKF@sub_mat_3+1,mat_multiply@matrixC+1
   9675  005070  ECF4  F03C         	call	_mat_multiply	;wreg free
   9676  005074                     
-  9677                           ;main.c: 171:     for (row = 1; row <= 2; row++) {
+  9677                           ;main.c: 170:     for (row = 1; row <= 2; row++) {
   9678  005074  0E01               	movlw	1
   9679  005076  0100               	movlb	0	; () banked
   9680  005078  6FE5               	movwf	EKF@row& (0+255),b
   9681  00507A                     l6385:
   9682                           
   9683                           ; BSR set to: 0
-  9684                           ;main.c: 172:   for (col = 1; col <= 2; col++) {
+  9684                           ;main.c: 171:   for (col = 1; col <= 2; col++) {
   9685  00507A  0E01               	movlw	1
   9686  00507C  6FE4               	movwf	EKF@col& (0+255),b
   9687  00507E                     l6387:
@@ -10086,7 +10086,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9698  005092                     l6391:
   9699                           
   9700                           ; BSR set to: 0
-  9701                           ;main.c: 173:             mat_set(row, col, mat_get(row, col, sub_mat_2) + mat_get(row, 
+  9701                           ;main.c: 172:             mat_set(row, col, mat_get(row, col, sub_mat_2) + mat_get(row, 
       +                          col, sub_mat_3), P);
   9702  005092  C0E4  F09F         	movff	EKF@col,mat_set@column
   9703  005096  C23A  F008         	movff	EKF@sub_mat_2,mat_get@matrix
@@ -10119,14 +10119,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9730  0050FA  51E5               	movf	EKF@row& (0+255),w,b
   9731  0050FC  EC1E  F044         	call	_mat_set
   9732  005100                     
-  9733                           ;main.c: 174:   }
+  9733                           ;main.c: 173:   }
   9734  005100  0100               	movlb	0	; () banked
   9735  005102  2BE4               	incf	EKF@col& (0+255),f,b
   9736  005104  EF3F  F028         	goto	l6387
   9737  005108                     l6397:
   9738                           
   9739                           ; BSR set to: 0
-  9740                           ;main.c: 175:  }
+  9740                           ;main.c: 174:  }
   9741  005108  2BE5               	incf	EKF@row& (0+255),f,b
   9742  00510A                     
   9743                           ; BSR set to: 0
@@ -10139,7 +10139,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9750  00511A                     u6920:
   9751  00511A                     
   9752                           ; BSR set to: 0
-  9753                           ;main.c: 179:  mat_multiply(P, Cprime_transpose, sub_mat_1);
+  9753                           ;main.c: 178:  mat_multiply(P, Cprime_transpose, sub_mat_1);
   9754  00511A  C240  F0AB         	movff	EKF@P,mat_multiply@matrixA
   9755  00511E  C241  F0AC         	movff	EKF@P+1,mat_multiply@matrixA+1
   9756  005122  C242  F0AD         	movff	EKF@Cprime_transpose,mat_multiply@matrixB
@@ -10148,7 +10148,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9759  00512E  C239  F0B0         	movff	EKF@sub_mat_1+1,mat_multiply@matrixC+1
   9760  005132  ECF4  F03C         	call	_mat_multiply	;wreg free
   9761  005136                     
-  9762                           ;main.c: 180:  float error_estimate = 0.0, combined_error = 0.0;
+  9762                           ;main.c: 179:  float error_estimate = 0.0, combined_error = 0.0;
   9763  005136  0E00               	movlw	0
   9764  005138  0100               	movlb	0	; () banked
   9765  00513A  6FDB               	movwf	EKF@error_estimate& (0+255),b
@@ -10170,13 +10170,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9781  005156  6FE2               	movwf	(EKF@combined_error+3)& (0+255),b
   9782  005158                     
   9783                           ; BSR set to: 0
-  9784                           ;main.c: 181:     for (row = 1; row <= 2; row++) {
+  9784                           ;main.c: 180:     for (row = 1; row <= 2; row++) {
   9785  005158  0E01               	movlw	1
   9786  00515A  6FE5               	movwf	EKF@row& (0+255),b
   9787  00515C                     l6413:
   9788                           
   9789                           ; BSR set to: 0
-  9790                           ;main.c: 182:         error_estimate += mat_get(row, 1, sub_mat_1) * mat_get(row, 1, Cpr
+  9790                           ;main.c: 181:         error_estimate += mat_get(row, 1, sub_mat_1) * mat_get(row, 1, Cpr
       +                          ime);
   9791  00515C  C0DB  F02A         	movff	EKF@error_estimate,___fladd@b
   9792  005160  C0DC  F02B         	movff	EKF@error_estimate+1,___fladd@b+1
@@ -10214,7 +10214,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9824  0051D2  C02C  F0DD         	movff	?___fladd+2,EKF@error_estimate+2
   9825  0051D6  C02D  F0DE         	movff	?___fladd+3,EKF@error_estimate+3
   9826  0051DA                     
-  9827                           ;main.c: 183:  }
+  9827                           ;main.c: 182:  }
   9828  0051DA  0100               	movlb	0	; () banked
   9829  0051DC  2BE5               	incf	EKF@row& (0+255),f,b
   9830  0051DE                     
@@ -10228,7 +10228,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9838  0051EE                     u6930:
   9839  0051EE                     
   9840                           ; BSR set to: 0
-  9841                           ;main.c: 185:  combined_error = error_estimate + Rk;
+  9841                           ;main.c: 184:  combined_error = error_estimate + Rk;
   9842  0051EE  C0DB  F02A         	movff	EKF@error_estimate,___fladd@b
   9843  0051F2  C0DC  F02B         	movff	EKF@error_estimate+1,___fladd@b+1
   9844  0051F6  C0DD  F02C         	movff	EKF@error_estimate+2,___fladd@b+2
@@ -10243,7 +10243,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9853  00521A  C02C  F0E1         	movff	?___fladd+2,EKF@combined_error+2
   9854  00521E  C02D  F0E2         	movff	?___fladd+3,EKF@combined_error+3
   9855  005222                     
-  9856                           ;main.c: 186:  combined_error = powf(combined_error,(-1));
+  9856                           ;main.c: 185:  combined_error = powf(combined_error,(-1));
   9857  005222  C0DF  F084         	movff	EKF@combined_error,powf@x
   9858  005226  C0E0  F085         	movff	EKF@combined_error+1,powf@x+1
   9859  00522A  C0E1  F086         	movff	EKF@combined_error+2,powf@x+2
@@ -10263,14 +10263,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9873  005250  C086  F0E1         	movff	?_powf+2,EKF@combined_error+2
   9874  005254  C087  F0E2         	movff	?_powf+3,EKF@combined_error+3
   9875  005258                     
-  9876                           ;main.c: 189:     for (row = 1; row <= 2; row++) {
+  9876                           ;main.c: 188:     for (row = 1; row <= 2; row++) {
   9877  005258  0E01               	movlw	1
   9878  00525A  0100               	movlb	0	; () banked
   9879  00525C  6FE5               	movwf	EKF@row& (0+255),b
   9880  00525E                     l6429:
   9881                           
   9882                           ; BSR set to: 0
-  9883                           ;main.c: 190:   mat_set(row, 1, mat_get(row, 1, sub_mat_1) * combined_error, Lk);
+  9883                           ;main.c: 189:   mat_set(row, 1, mat_get(row, 1, sub_mat_1) * combined_error, Lk);
   9884  00525E  0E01               	movlw	1
   9885  005260  6F9F               	movwf	mat_set@column& (0+255),b
   9886  005262  C238  F008         	movff	EKF@sub_mat_1,mat_get@matrix
@@ -10298,7 +10298,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9908  0052B2  51E5               	movf	EKF@row& (0+255),w,b
   9909  0052B4  EC1E  F044         	call	_mat_set
   9910  0052B8                     
-  9911                           ;main.c: 191:  }
+  9911                           ;main.c: 190:  }
   9912  0052B8  0100               	movlb	0	; () banked
   9913  0052BA  2BE5               	incf	EKF@row& (0+255),f,b
   9914  0052BC                     
@@ -10312,7 +10312,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9922  0052CC                     u6940:
   9923  0052CC                     
   9924                           ; BSR set to: 0
-  9925                           ;main.c: 195:  float temp_val = 0.0;
+  9925                           ;main.c: 194:  float temp_val = 0.0;
   9926  0052CC  0E00               	movlw	0
   9927  0052CE  6FD7               	movwf	EKF@temp_val& (0+255),b
   9928  0052D0  0E00               	movlw	0
@@ -10323,7 +10323,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9933  0052DA  6FDA               	movwf	(EKF@temp_val+3)& (0+255),b
   9934  0052DC                     
   9935                           ; BSR set to: 0
-  9936                           ;main.c: 196:     temp_val = (V + mat_get(2, 1, xhat)) - hk(100 * mat_get(1, 1, xhat), I
+  9936                           ;main.c: 195:     temp_val = (V + mat_get(2, 1, xhat)) - hk(100 * mat_get(1, 1, xhat), I
       +                          , Voc0, R0);
   9937  0052DC  0E00               	movlw	0
   9938  0052DE  6E15               	movwf	___flmul@a^0,c
@@ -10349,7 +10349,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9958  00531A  C013  F0CD         	movff	?___flmul+2,_EKF$2289+2
   9959  00531E  C014  F0CE         	movff	?___flmul+3,_EKF$2289+3
   9960  005322                     
-  9961                           ;main.c: 196:     temp_val = (V + mat_get(2, 1, xhat)) - hk(100 * mat_get(1, 1, xhat), I
+  9961                           ;main.c: 195:     temp_val = (V + mat_get(2, 1, xhat)) - hk(100 * mat_get(1, 1, xhat), I
       +                          , Voc0, R0);
   9962  005322  C20C  F02E         	movff	EKF@V,___fladd@a
   9963  005326  C20D  F02F         	movff	EKF@V+1,___fladd@a+1
@@ -10371,7 +10371,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
   9979  005360  C02C  F0D1         	movff	?___fladd+2,_EKF$2290+2
   9980  005364  C02D  F0D2         	movff	?___fladd+3,_EKF$2290+3
   9981  005368                     
-  9982                           ;main.c: 196:     temp_val = (V + mat_get(2, 1, xhat)) - hk(100 * mat_get(1, 1, xhat), I
+  9982                           ;main.c: 195:     temp_val = (V + mat_get(2, 1, xhat)) - hk(100 * mat_get(1, 1, xhat), I
       +                          , Voc0, R0);
   9983  005368  C246  F056         	movff	EKF@R0,hk@R0
   9984  00536C  C247  F057         	movff	EKF@R0+1,hk@R0+1
@@ -10395,7 +10395,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  10002  0053B4  C04C  F0D5         	movff	?_hk+2,_EKF$2291+2
  10003  0053B8  C04D  F0D6         	movff	?_hk+3,_EKF$2291+3
  10004  0053BC                     
- 10005                           ;main.c: 196:     temp_val = (V + mat_get(2, 1, xhat)) - hk(100 * mat_get(1, 1, xhat), I
+ 10005                           ;main.c: 195:     temp_val = (V + mat_get(2, 1, xhat)) - hk(100 * mat_get(1, 1, xhat), I
       +                          , Voc0, R0);
  10006  0053BC  C0CF  F042         	movff	_EKF$2290,___flsub@b
  10007  0053C0  C0D0  F043         	movff	_EKF$2290+1,___flsub@b+1
@@ -10411,14 +10411,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  10017  0053E8  C044  F0D9         	movff	?___flsub+2,EKF@temp_val+2
  10018  0053EC  C045  F0DA         	movff	?___flsub+3,EKF@temp_val+3
  10019  0053F0                     
- 10020                           ;main.c: 199:  for (row = 1; row <= 2; row++) {
+ 10020                           ;main.c: 198:  for (row = 1; row <= 2; row++) {
  10021  0053F0  0E01               	movlw	1
  10022  0053F2  0100               	movlb	0	; () banked
  10023  0053F4  6FE5               	movwf	EKF@row& (0+255),b
  10024  0053F6                     l6451:
  10025                           
  10026                           ; BSR set to: 0
- 10027                           ;main.c: 200:   mat_set(row, 1, mat_get(row, 1, Lk) * temp_val, sub_mat_1);
+ 10027                           ;main.c: 199:   mat_set(row, 1, mat_get(row, 1, Lk) * temp_val, sub_mat_1);
  10028  0053F6  0E01               	movlw	1
  10029  0053F8  6F9F               	movwf	mat_set@column& (0+255),b
  10030  0053FA  C244  F008         	movff	EKF@Lk,mat_get@matrix
@@ -10446,7 +10446,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  10052  00544A  51E5               	movf	EKF@row& (0+255),w,b
  10053  00544C  EC1E  F044         	call	_mat_set
  10054                           
- 10055                           ;main.c: 201:   mat_set(row, 1, mat_get(row, 1, xhat) + mat_get(row, 1, sub_mat_1), xhat
+ 10055                           ;main.c: 200:   mat_set(row, 1, mat_get(row, 1, xhat) + mat_get(row, 1, sub_mat_1), xhat
       +                          Corrected);
  10056  005450  0E01               	movlw	1
  10057  005452  0100               	movlb	0	; () banked
@@ -10483,7 +10483,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  10088  0054BA  51E5               	movf	EKF@row& (0+255),w,b
  10089  0054BC  EC1E  F044         	call	_mat_set
  10090  0054C0                     
- 10091                           ;main.c: 202:  }
+ 10091                           ;main.c: 201:  }
  10092  0054C0  0100               	movlb	0	; () banked
  10093  0054C2  2BE5               	incf	EKF@row& (0+255),f,b
  10094  0054C4                     
@@ -10497,13 +10497,13 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  10102  0054D4                     u6950:
  10103  0054D4                     
  10104                           ; BSR set to: 0
- 10105                           ;main.c: 206:     for (row = 1; row <= 2; row++) {
+ 10105                           ;main.c: 205:     for (row = 1; row <= 2; row++) {
  10106  0054D4  0E01               	movlw	1
  10107  0054D6  6FE5               	movwf	EKF@row& (0+255),b
  10108  0054D8                     l6463:
  10109                           
  10110                           ; BSR set to: 0
- 10111                           ;main.c: 207:   for (index = 1; index <= 2; index++) {
+ 10111                           ;main.c: 206:   for (index = 1; index <= 2; index++) {
  10112  0054D8  0E01               	movlw	1
  10113  0054DA  6FE3               	movwf	EKF@index& (0+255),b
  10114  0054DC                     l6465:
@@ -10520,7 +10520,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  10125  0054F0                     l6469:
  10126                           
  10127                           ; BSR set to: 0
- 10128                           ;main.c: 208:    mat_set(row, index, mat_get(row, 1, Lk) * mat_get(index, 1, Cprime), su
+ 10128                           ;main.c: 207:    mat_set(row, index, mat_get(row, 1, Lk) * mat_get(index, 1, Cprime), su
       +                          b_mat_1);
  10129  0054F0  C0E3  F09F         	movff	EKF@index,mat_set@column
  10130  0054F4  C244  F008         	movff	EKF@Lk,mat_get@matrix
@@ -10555,14 +10555,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  10159  005558  51E5               	movf	EKF@row& (0+255),w,b
  10160  00555A  EC1E  F044         	call	_mat_set
  10161  00555E                     
- 10162                           ;main.c: 209:   }
+ 10162                           ;main.c: 208:   }
  10163  00555E  0100               	movlb	0	; () banked
  10164  005560  2BE3               	incf	EKF@index& (0+255),f,b
  10165  005562  EF6E  F02A         	goto	l6465
  10166  005566                     l6475:
  10167                           
  10168                           ; BSR set to: 0
- 10169                           ;main.c: 210:  }
+ 10169                           ;main.c: 209:  }
  10170  005566  2BE5               	incf	EKF@row& (0+255),f,b
  10171  005568                     
  10172                           ; BSR set to: 0
@@ -10575,7 +10575,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  10179  005578                     u6970:
  10180  005578                     
  10181                           ; BSR set to: 0
- 10182                           ;main.c: 212:  mat_multiply(sub_mat_1, P, sub_mat_2);
+ 10182                           ;main.c: 211:  mat_multiply(sub_mat_1, P, sub_mat_2);
  10183  005578  C238  F0AB         	movff	EKF@sub_mat_1,mat_multiply@matrixA
  10184  00557C  C239  F0AC         	movff	EKF@sub_mat_1+1,mat_multiply@matrixA+1
  10185  005580  C240  F0AD         	movff	EKF@P,mat_multiply@matrixB
@@ -10584,14 +10584,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  10188  00558C  C23B  F0B0         	movff	EKF@sub_mat_2+1,mat_multiply@matrixC+1
  10189  005590  ECF4  F03C         	call	_mat_multiply	;wreg free
  10190  005594                     
- 10191                           ;main.c: 215:     for (row = 1; row <= 2; row++) {
+ 10191                           ;main.c: 214:     for (row = 1; row <= 2; row++) {
  10192  005594  0E01               	movlw	1
  10193  005596  0100               	movlb	0	; () banked
  10194  005598  6FE5               	movwf	EKF@row& (0+255),b
  10195  00559A                     l6487:
  10196                           
  10197                           ; BSR set to: 0
- 10198                           ;main.c: 216:   for (col = 1; col <= 2; col++) {
+ 10198                           ;main.c: 215:   for (col = 1; col <= 2; col++) {
  10199  00559A  0E01               	movlw	1
  10200  00559C  6FE4               	movwf	EKF@col& (0+255),b
  10201  00559E                     l6489:
@@ -10608,7 +10608,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  10212  0055B2                     l6493:
  10213                           
  10214                           ; BSR set to: 0
- 10215                           ;main.c: 217:    mat_set(row, col, mat_get(row, col, P) - mat_get(row, col, sub_mat_2), 
+ 10215                           ;main.c: 216:    mat_set(row, col, mat_get(row, col, P) - mat_get(row, col, sub_mat_2), 
       +                          PCorrected);
  10216  0055B2  C0E4  F09F         	movff	EKF@col,mat_set@column
  10217  0055B6  C240  F008         	movff	EKF@P,mat_get@matrix
@@ -10641,14 +10641,14 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  10244  00561A  51E5               	movf	EKF@row& (0+255),w,b
  10245  00561C  EC1E  F044         	call	_mat_set
  10246  005620                     
- 10247                           ;main.c: 218:   }
+ 10247                           ;main.c: 217:   }
  10248  005620  0100               	movlb	0	; () banked
  10249  005622  2BE4               	incf	EKF@col& (0+255),f,b
  10250  005624  EFCF  F02A         	goto	l6489
  10251  005628                     l6499:
  10252                           
  10253                           ; BSR set to: 0
- 10254                           ;main.c: 219:  }
+ 10254                           ;main.c: 218:  }
  10255  005628  2BE5               	incf	EKF@row& (0+255),f,b
  10256  00562A                     
  10257                           ; BSR set to: 0
@@ -16582,7 +16582,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  16129                           
  16130 ;; *************** function _hk *****************
  16131 ;; Defined at:
- 16132 ;;		line 124 in file "main.c"
+ 16132 ;;		line 123 in file "main.c"
  16133 ;; Parameters:    Size  Location     Type
  16134 ;;  SOC_val         4   73[COMRAM] float 
  16135 ;;  I               4   77[COMRAM] float 
@@ -16626,7 +16626,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  16168  0087BE                     _hk:
  16169                           	callstack 27
  16170  0087BE                     
- 16171                           ;main.c: 125:  return VOC(SOC_val, Voc0) - (R0 * I);
+ 16171                           ;main.c: 124:  return VOC(SOC_val, Voc0) - (R0 * I);
  16172  0087BE  C052  F03E         	movff	hk@Voc0,VOC@Voc0
  16173  0087C2  C053  F03F         	movff	hk@Voc0+1,VOC@Voc0+1
  16174  0087C6  C054  F040         	movff	hk@Voc0+2,VOC@Voc0+2
@@ -16664,7 +16664,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  16206                           
  16207 ;; *************** function _VOC *****************
  16208 ;; Defined at:
- 16209 ;;		line 120 in file "main.c"
+ 16209 ;;		line 119 in file "main.c"
  16210 ;; Parameters:    Size  Location     Type
  16211 ;;  SOC             4   57[COMRAM] float 
  16212 ;;  Voc0            4   61[COMRAM] float 
@@ -16705,7 +16705,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  16242  008B9A                     _VOC:
  16243                           	callstack 27
  16244  008B9A                     
- 16245                           ;main.c: 121:  return 0.007 * SOC + Voc0;
+ 16245                           ;main.c: 120:  return 0.007 * SOC + Voc0;
  16246  008B9A  0E42               	movlw	66
  16247  008B9C  6E15               	movwf	___flmul@a^0,c
  16248  008B9E  0E60               	movlw	96
@@ -16738,7 +16738,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  16275                           
  16276 ;; *************** function _fk *****************
  16277 ;; Defined at:
- 16278 ;;		line 128 in file "main.c"
+ 16278 ;;		line 127 in file "main.c"
  16279 ;; Parameters:    Size  Location     Type
  16280 ;;  xhatk_1         2   75[BANK0 ] PTR struct MatrixStruct
  16281 ;;		 -> main@xhatk_1(18), 
@@ -16790,7 +16790,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  16322  00759E                     _fk:
  16323                           	callstack 27
  16324  00759E                     
- 16325                           ;main.c: 129:     float array_mat[2][1] = { {(-1) * I / Cbat}, {(I / Cc) - (mat_get(2, 1
+ 16325                           ;main.c: 128:     float array_mat[2][1] = { {(-1) * I / Cbat}, {(I / Cc) - (mat_get(2, 1
       +                          , xhatk_1) / (Cc * Rc))} };
  16326  00759E  EE20  F0C3         	lfsr	2,fk@array_mat
  16327  0075A2  0E07               	movlw	7
@@ -16871,7 +16871,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  16402  0076AC  C044  F0C9         	movff	?___flsub+2,fk@array_mat+6
  16403  0076B0  C045  F0CA         	movff	?___flsub+3,fk@array_mat+7
  16404  0076B4                     
- 16405                           ;main.c: 131:     array_mat[0][0] *= dt;
+ 16405                           ;main.c: 130:     array_mat[0][0] *= dt;
  16406  0076B4  C0C3  F011         	movff	fk@array_mat,___flmul@b
  16407  0076B8  C0C4  F012         	movff	fk@array_mat+1,___flmul@b+1
  16408  0076BC  C0C5  F013         	movff	fk@array_mat+2,___flmul@b+2
@@ -16886,7 +16886,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  16417  0076E0  C013  F0C5         	movff	?___flmul+2,fk@array_mat+2
  16418  0076E4  C014  F0C6         	movff	?___flmul+3,fk@array_mat+3
  16419  0076E8                     
- 16420                           ;main.c: 132:     mat_set(1, 1, mat_get(1, 1, xhatk_1) + array_mat[0][0], fk_);
+ 16420                           ;main.c: 131:     mat_set(1, 1, mat_get(1, 1, xhatk_1) + array_mat[0][0], fk_);
  16421  0076E8  0E01               	movlw	1
  16422  0076EA  0100               	movlb	0	; () banked
  16423  0076EC  6F9F               	movwf	mat_set@column& (0+255),b
@@ -16914,7 +16914,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  16445  00773C  0E01               	movlw	1
  16446  00773E  EC1E  F044         	call	_mat_set
  16447  007742                     
- 16448                           ;main.c: 133:     array_mat[1][0] *= dt;
+ 16448                           ;main.c: 132:     array_mat[1][0] *= dt;
  16449  007742  C0C7  F011         	movff	fk@array_mat+4,___flmul@b
  16450  007746  C0C8  F012         	movff	fk@array_mat+5,___flmul@b+1
  16451  00774A  C0C9  F013         	movff	fk@array_mat+6,___flmul@b+2
@@ -16929,7 +16929,7 @@ Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1
  16460  00776E  C013  F0C9         	movff	?___flmul+2,fk@array_mat+6
  16461  007772  C014  F0CA         	movff	?___flmul+3,fk@array_mat+7
  16462  007776                     
- 16463                           ;main.c: 134:     mat_set(2, 1, mat_get(2, 1, xhatk_1) + array_mat[1][0], fk_);
+ 16463                           ;main.c: 133:     mat_set(2, 1, mat_get(2, 1, xhatk_1) + array_mat[1][0], fk_);
  16464  007776  0E01               	movlw	1
  16465  007778  0100               	movlb	0	; () banked
  16466  00777A  6F9F               	movwf	mat_set@column& (0+255),b
@@ -20226,7 +20226,7 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.32 build 20210201212658 
-Symbol Table                                                                                   Fri Apr 28 19:51:24 2023
+Symbol Table                                                                                   Sat Apr 29 12:00:35 2023
 
                               main@PCorrected 0296                                  ___fldiv@aexp 006C  
                                 ___fldiv@bexp 006B                                  ___fldiv@sign 0064  

@@ -36648,7 +36648,7 @@ void UART1_Initialize(void)
     U1CON2 = 0x00;
 
 
-    U1BRGL = 0x19;
+    U1BRGL = 0x01;
 
 
     U1BRGH = 0x00;
