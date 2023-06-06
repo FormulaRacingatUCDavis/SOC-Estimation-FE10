@@ -21,7 +21,7 @@ void mat_init(unsigned char rows, unsigned char columns, Matrix * matrix);
 void mat_set(unsigned char row, unsigned char column, float element, Matrix * matrix);
 float mat_get(unsigned char row, unsigned char column, Matrix *);
 void mat_fill_zero(Matrix *);
-int mat_multiply(Matrix *matrixA, Matrix *matrixB, Matrix *matrixC);
+void mat_multiply(Matrix *matrixA, Matrix *matrixB, Matrix *matrixC);
 void mat_transpose(Matrix* matrix, Matrix* result);
 # 1 "matrix_mult.c" 2
 
@@ -55,12 +55,10 @@ void mat_fill_zero(Matrix *matrix) {
     return;
 }
 
-int mat_multiply(Matrix* matrixA, Matrix* matrixB, Matrix* matrixC) {
+void mat_multiply(Matrix* matrixA, Matrix* matrixB, Matrix* matrixC) {
 
 
-    if (matrixA->columns != matrixB->rows) {
-        return -1;
-    }
+
 
 
     mat_init(matrixA->rows, matrixB->columns, matrixC);
@@ -74,7 +72,6 @@ int mat_multiply(Matrix* matrixA, Matrix* matrixB, Matrix* matrixC) {
         }
     }
 
-    return 0;
 }
 
 

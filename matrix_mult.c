@@ -29,12 +29,10 @@ void mat_fill_zero(Matrix *matrix) {
     return;
 }
 
-int mat_multiply(Matrix* matrixA, Matrix* matrixB, Matrix* matrixC) {
+void mat_multiply(Matrix* matrixA, Matrix* matrixB, Matrix* matrixC) {
 
-    // un-equal number of columns and rows yield an error value
-    if (matrixA->columns != matrixB->rows) {
-        return -1;
-    }
+    // matrixA.columns != matrixB.rows should yield an error 
+    // BUT it should not check that in this application 
 
     // set the result matrix's rows and columns numbers and initialize its elements to zero
     mat_init(matrixA->rows, matrixB->columns, matrixC);
@@ -48,7 +46,6 @@ int mat_multiply(Matrix* matrixA, Matrix* matrixB, Matrix* matrixC) {
         }
     }
 
-    return 0;
 }
 
 // Function to transpose a 2x2 matrix

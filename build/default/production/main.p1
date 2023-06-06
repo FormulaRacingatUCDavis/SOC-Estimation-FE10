@@ -10,8 +10,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./matrix_mult.h: 50: void mat_set(unsigned char row, unsigned char column, float element, Matrix * matrix);
 [v _mat_set `(v ~T0 @X0 0 ef4`uc`uc`f`*S3209 ]
 "53
-[; ;./matrix_mult.h: 53: int mat_multiply(Matrix *matrixA, Matrix *matrixB, Matrix *matrixC);
-[v _mat_multiply `(i ~T0 @X0 0 ef3`*S3209`*S3209`*S3209 ]
+[; ;./matrix_mult.h: 53: void mat_multiply(Matrix *matrixA, Matrix *matrixB, Matrix *matrixC);
+[v _mat_multiply `(v ~T0 @X0 0 ef3`*S3209`*S3209`*S3209 ]
 [v F23314 `(f ~T0 @X0 1 tf2`f`f ]
 "319 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\math.h
 [; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\math.h: 319: __attribute__((nonreentrant)) float powf(float, float);
@@ -32,12 +32,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "54 ./matrix_mult.h
 [; ;./matrix_mult.h: 54: void mat_transpose(Matrix* matrix, Matrix* result);
 [v _mat_transpose `(v ~T0 @X0 0 ef2`*S3209`*S3209 ]
+"351 ./mcc_generated_files/uart1.h
+[; ;./mcc_generated_files/uart1.h: 351: uint8_t UART1_Read(void);
+[v _UART1_Read `(uc ~T0 @X0 0 ef ]
 "308 ./mcc_generated_files/tmr0.h
 [; ;./mcc_generated_files/tmr0.h: 308: _Bool TMR0_HasOverflowOccured(void);
 [v _TMR0_HasOverflowOccured `(a ~T0 @X0 0 ef ]
-"111 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-"100 ./mcc_generated_files/tmr0.h
+"100
 [; ;./mcc_generated_files/tmr0.h: 100: void TMR0_Initialize(void);
 [v _TMR0_Initialize `(v ~T0 @X0 0 ef ]
 "272 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k83.h
@@ -3630,83 +3631,86 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 331:     while (1) {
 [e :U 3246 ]
 {
-"349
-[; ;main.c: 349:         actualSOC = 0.97;
-[e = _actualSOC -> .0.97 `f ]
-"350
-[; ;main.c: 350:         Vc = 0.2;
-[e = _Vc -> .0.2 `f ]
-"351
-[; ;main.c: 351:         V = 0.04;
-[e = _V -> .0.04 `f ]
-"352
-[; ;main.c: 352:         I = 0.003;
-[e = _I -> .0.003 `f ]
-"357
-[; ;main.c: 357:         EKF(&xhatk_1, &Pk_1, I, Ik_1, V, 3.435, Rk, &Aprime, &Cprime, &Eprime,
+"333
+[; ;main.c: 333:         if(UART1_Read() == 0x01) {
+[e $ ! == -> ( _UART1_Read ..  `i -> 1 `i 3248  ]
+{
+"334
+[; ;main.c: 334:             actualSOC = UART1_Read();
+[e = _actualSOC -> ( _UART1_Read ..  `f ]
+"335
+[; ;main.c: 335:             Vc = UART1_Read();
+[e = _Vc -> ( _UART1_Read ..  `f ]
+"336
+[; ;main.c: 336:             V = UART1_Read();
+[e = _V -> ( _UART1_Read ..  `f ]
+"337
+[; ;main.c: 337:             I = UART1_Read();
+[e = _I -> ( _UART1_Read ..  `f ]
+"338
+[; ;main.c: 338:         }
+}
+[e :U 3248 ]
+"346
+[; ;main.c: 346:         EKF(&xhatk_1, &Pk_1, I, Ik_1, V, 3.435, Rk, &Aprime, &Cprime, &Eprime,
 [e ( _EKF (4 , , , , , , , , , , , , , , , , , , , , , , , , , , , , &U _xhatk_1 &U _Pk_1 _I _Ik_1 _V -> .3.435 `f _Rk &U _Aprime &U _Cprime &U _Eprime &U _Fprime &U _fk_ -> .0.01 `f -> -> 18000 `i `f -> -> 2400 `i `f -> .0.015 `f &U _Qk1 &U _Aprime_transpose &U _Eprime_transpose &U _sub_mat_1 &U _sub_mat_2 &U _sub_mat_3 &U _xhat &U _P &U _Cprime_transpose &U _Lk -> .0.01 `f &U _xhatCorrected &U _PCorrected ]
-"365
-[; ;main.c: 365:         for (i = 1; i <= 2; i++) {
+"354
+[; ;main.c: 354:         for (i = 1; i <= 2; i++) {
 {
 [e = _i -> -> 1 `i `uc ]
-[e $ <= -> _i `i -> 2 `i 3248  ]
-[e $U 3249  ]
-[e :U 3248 ]
+[e $ <= -> _i `i -> 2 `i 3249  ]
+[e $U 3250  ]
+[e :U 3249 ]
 {
-"367
-[; ;main.c: 367:             mat_set(i, 1, mat_get(i, 1, &xhatCorrected), &xhatk_1);
+"356
+[; ;main.c: 356:             mat_set(i, 1, mat_get(i, 1, &xhatCorrected), &xhatk_1);
 [e ( _mat_set (4 , , , _i -> -> 1 `i `uc ( _mat_get (3 , , _i -> -> 1 `i `uc &U _xhatCorrected &U _xhatk_1 ]
-"370
-[; ;main.c: 370:             for (j = 1; j <= 2; j++) {
+"359
+[; ;main.c: 359:             for (j = 1; j <= 2; j++) {
 {
 [e = _j -> -> 1 `i `uc ]
-[e $ <= -> _j `i -> 2 `i 3251  ]
-[e $U 3252  ]
-[e :U 3251 ]
+[e $ <= -> _j `i -> 2 `i 3252  ]
+[e $U 3253  ]
+[e :U 3252 ]
 {
-"372
-[; ;main.c: 372:                 mat_set(i, j, mat_get(i, j, &PCorrected), &Pk_1);
+"361
+[; ;main.c: 361:                 mat_set(i, j, mat_get(i, j, &PCorrected), &Pk_1);
 [e ( _mat_set (4 , , , _i _j ( _mat_get (3 , , _i _j &U _PCorrected &U _Pk_1 ]
-"373
-[; ;main.c: 373:             }
+"362
+[; ;main.c: 362:             }
 }
 [e ++ _j -> -> 1 `i `uc ]
-[e $ <= -> _j `i -> 2 `i 3251  ]
-[e :U 3252 ]
+[e $ <= -> _j `i -> 2 `i 3252  ]
+[e :U 3253 ]
 }
+"363
+[; ;main.c: 363:         }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ <= -> _i `i -> 2 `i 3249  ]
+[e :U 3250 ]
+}
+"366
+[; ;main.c: 366:         if (TMR0_HasOverflowOccured()) {
+[e $ ! != -> ( _TMR0_HasOverflowOccured ..  `i -> 0 `i 3255  ]
+{
+"367
+[; ;main.c: 367:             cumulative_time += 10;
+[e =+ _cumulative_time -> -> 10 `i `uc ]
+"373
+[; ;main.c: 373:             TMR0_Initialize();
+[e ( _TMR0_Initialize ..  ]
 "374
 [; ;main.c: 374:         }
 }
-[e ++ _i -> -> 1 `i `uc ]
-[e $ <= -> _i `i -> 2 `i 3248  ]
-[e :U 3249 ]
-}
-"377
-[; ;main.c: 377:         if (TMR0_HasOverflowOccured()) {
-[e $ ! != -> ( _TMR0_HasOverflowOccured ..  `i -> 0 `i 3254  ]
-{
-"378
-[; ;main.c: 378:             cumulative_time += 10;
-[e =+ _cumulative_time -> -> 10 `i `uc ]
-"382
-[; ;main.c: 382:             printf("%.6lf", mat_get(1, 1, &xhatCorrected));
-[e ( _printf , (. :s 1C -> ( _mat_get (3 , , -> -> 1 `i `uc -> -> 1 `i `uc &U _xhatCorrected `d ]
-"384
-[; ;main.c: 384:             TMR0_Initialize();
-[e ( _TMR0_Initialize ..  ]
-"385
-[; ;main.c: 385:         }
-}
-[e :U 3254 ]
-"387
-[; ;main.c: 387:     }
+[e :U 3255 ]
+"376
+[; ;main.c: 376:     }
 }
 [e :U 3245 ]
 [e $U 3246  ]
 [e :U 3247 ]
-"389
-[; ;main.c: 389: }
+"378
+[; ;main.c: 378: }
 [e :UE 3244 ]
 }
-[p f _printf 8462352 ]
-[a 1C 37 46 54 108 102 0 ]

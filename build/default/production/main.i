@@ -37130,7 +37130,7 @@ void mat_init(unsigned char rows, unsigned char columns, Matrix * matrix);
 void mat_set(unsigned char row, unsigned char column, float element, Matrix * matrix);
 float mat_get(unsigned char row, unsigned char column, Matrix *);
 void mat_fill_zero(Matrix *);
-int mat_multiply(Matrix *matrixA, Matrix *matrixB, Matrix *matrixC);
+void mat_multiply(Matrix *matrixA, Matrix *matrixB, Matrix *matrixC);
 void mat_transpose(Matrix* matrix, Matrix* result);
 # 98 "main.c" 2
 
@@ -37341,11 +37341,16 @@ void main(void) {
 
 
     while (1) {
-# 349 "main.c"
-        actualSOC = 0.97;
-        Vc = 0.2;
-        V = 0.04;
-        I = 0.003;
+
+        if(UART1_Read() == 0x01) {
+            actualSOC = UART1_Read();
+            Vc = UART1_Read();
+            V = UART1_Read();
+            I = UART1_Read();
+        }
+
+
+
 
 
 
@@ -37375,7 +37380,7 @@ void main(void) {
 
 
 
-            printf("%.6lf", mat_get(1, 1, &xhatCorrected));
+
 
             TMR0_Initialize();
         }

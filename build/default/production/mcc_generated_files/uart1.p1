@@ -3210,8 +3210,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/uart1.c: 97:     U1CON2 = 0x00;
 [e = _U1CON2 -> -> 0 `i `uc ]
 "100
-[; ;mcc_generated_files/uart1.c: 100:     U1BRGL = 0x01;
-[e = _U1BRGL -> -> 1 `i `uc ]
+[; ;mcc_generated_files/uart1.c: 100:     U1BRGL = 0x0C;
+[e = _U1BRGL -> -> 12 `i `uc ]
 "103
 [; ;mcc_generated_files/uart1.c: 103:     U1BRGH = 0x00;
 [e = _U1BRGH -> -> 0 `i `uc ]

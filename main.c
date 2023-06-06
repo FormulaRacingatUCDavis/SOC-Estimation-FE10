@@ -329,27 +329,16 @@ void main(void) {
      
     
     while (1) { 
-        // Read values for SOC, Vc, V, I ------------------------------------
-//        float percentInput1 = ADCC_GetSingleConversion(channel_ANB1)/4096.0; // mock input
-//        actualSOC = 80 + 20*percentInput1;
-//        Vc = 0.9 * percentInput1;
-
-//        float percentInput2 = ADCC_GetSingleConversion(channel_ANB2)/4096.0; // mock input
-//        V = 2 + (percentInput2 * 2);
-//        I = -7 + (percentInput2 * 117);
+        // Read values for SOC, Vc, V, I ------------------------------------    
+        if(UART1_Read() ==  0x01) { // if detect start of frame
+            actualSOC = UART1_Read();
+            Vc =  UART1_Read();
+            V =  UART1_Read();
+            I =  UART1_Read();
+        }
+            
         
-//            if(UART1_Read() ==  0x01) {
-//                actualSOC = UART1_Read();
-//                Vc =  UART1_Read();
-//                V =  UART1_Read();
-//                I =  UART1_Read();
-//            }
-//            
-//        }
-        actualSOC = 0.97;
-        Vc =  0.2;
-        V =  0.04;
-        I =  0.003;
+
 
 //        printf("[INPUT] ActualSOC: %.6lf, Vc: %.6lf, V: %.6lf, I: %.6lf\n\r", actualSOC, Vc, V, I);
 
@@ -374,12 +363,12 @@ void main(void) {
         }
         
         // Get time per 10 ms interval
-        if (TMR0_HasOverflowOccured()) {
+        if (TMR0_HasOverflowOccured()) { // TODO: make this an ISR instead to make sure timing matches sensor values
             cumulative_time += 10;
 
             // print output (t,SOC_actual,SOC_estimated)
 //            printf("[OUTPUT] Time(s): %d, ActualSOC: %.6lf, EstimatedSOC: %.6lf\n\r", cumulative_time, actualSOC, mat_get(1, 1, &xhatCorrected));
-            printf("%.6lf", mat_get(1, 1, &xhatCorrected));
+
 
             TMR0_Initialize(); // reset timer
         }

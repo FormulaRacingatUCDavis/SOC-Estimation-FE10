@@ -50,7 +50,7 @@ void mat_init(unsigned char rows, unsigned char columns, Matrix * matrix);
 void mat_set(unsigned char row, unsigned char column, float element, Matrix * matrix);
 float mat_get(unsigned char row, unsigned char column, Matrix *);
 void mat_fill_zero(Matrix *);
-int mat_multiply(Matrix *matrixA, Matrix *matrixB, Matrix *matrixC);
+void mat_multiply(Matrix *matrixA, Matrix *matrixB, Matrix *matrixC);
 void mat_transpose(Matrix* matrix, Matrix* result); // Function to transpose a 2x2 matrix
                                                 //                         ^^^
 
