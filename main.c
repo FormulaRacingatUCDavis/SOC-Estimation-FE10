@@ -82,9 +82,6 @@ void main(void)
 
 // This program estimates a battery system's SOC (state of charge) with respect to time
 // based off simulated values for the circuit's V (voltage) and I (current).
-// The program must read data from SOC_data_sim.csv
-// A csv file with all the estimated values named kalman_SOC_estimate.csv is generated.
-// In the generated csv, you can compare the actual SOC values to the estimated SOC values.
 // 
 // Created by:
 //  - Ayush Saha, 3/20/2022 (Rev 1)
@@ -335,10 +332,10 @@ void main(void) {
             Vc =  UART1_Read();
             V =  UART1_Read();
             I =  UART1_Read();
+        } else {
+            continue;
         }
             
-        
-
 
 //        printf("[INPUT] ActualSOC: %.6lf, Vc: %.6lf, V: %.6lf, I: %.6lf\n\r", actualSOC, Vc, V, I);
 
