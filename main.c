@@ -359,19 +359,11 @@ void main(void) {
             }
         }
         
-        // Get time per 10 ms interval
-        if (TMR0_HasOverflowOccured()) { // TODO: make this an ISR instead to make sure timing matches sensor values
-            cumulative_time += 10;
-
-            // print output (t,SOC_actual,SOC_estimated)
-//            printf("[OUTPUT] Time(s): %d, ActualSOC: %.6lf, EstimatedSOC: %.6lf\n\r", cumulative_time, actualSOC, mat_get(1, 1, &xhatCorrected));
-
-
-            TMR0_Initialize(); // reset timer
-        }
+        UART1_Write(mat_get(1, 1, &xhatCorrected)); // send estimated SOC
 
     }
 
 }
+
 
  
