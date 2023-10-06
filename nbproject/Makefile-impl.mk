@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=SOC_Estimation_FE10.X
+PROJECTNAME=SOC-Estimation-FE10
 
 # Active Configuration
 DEFAULTCONF=default

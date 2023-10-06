@@ -93,6 +93,9 @@ void main(void)
 #include<stdbool.h>
 
 #include "matrix_mult.h"
+#include "frame.h"
+
+#define RX_BUFFER_LENGTH 128
 
 //#pragma warning (disable:4996)
 
@@ -324,16 +327,23 @@ void main(void) {
 
     uint8_t cumulative_time = 0;
      
+    static uint8_t rx_buf[RX_BUFFER_LENGTH] = {0};
+    static Frame_t rx_frame; 
+    Frame_Init(&rx_frame, rx_buf, RX_BUFFER_LENGTH);
     
     while (1) { 
-        // Read values for SOC, Vc, V, I ------------------------------------    
-        if(UART1_Read() ==  0x01) { // if detect start of frame
-            actualSOC = UART1_Read();
-            Vc =  UART1_Read();
-            V =  UART1_Read();
-            I =  UART1_Read();
-        } else {
-            continue;
+        while(UART1_is_rx_ready())
+        {
+            FrameResult_t res = Frame_Update(rx_frame, UART1_Read());
+            if(res == FRAME_COMPLETE){
+                int16_t vc_int = rx_frame->buf[0] + (rx_frame->buf[1] << 8); 
+                Vc = (float)vc_int;
+                int16_t v_int = rx_frame->buf[2] + (rx_frame->buf[3] << 8); 
+                V = (float)v_int;
+                int16_t i_int = rx_frame->buf[4] + (rx_frame->buf[5] << 8); 
+                I = (float)i_int;
+                break;
+            }
         }
             
 
@@ -359,8 +369,10 @@ void main(void) {
             }
         }
         
-        UART1_Write(mat_get(1, 1, &xhatCorrected)); // send estimated SOC
-
+        uint8_t SOC = (uint8_t)(mat_get(1, 1, &xhatCorrected) * 100);
+        while(!UART1_is_tx_ready());
+        UART1_Write(SOC); // send estimated SOC
+ 
     }
 
 }

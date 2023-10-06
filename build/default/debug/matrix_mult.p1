@@ -1,0 +1,216 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"41 ./matrix_mult.h
+[; ;./matrix_mult.h: 41: typedef struct MatrixStruct {
+[s S1 `uc 1 `uc 1 `f -> 4 `i ]
+[n S1 MatrixStruct rows columns elements ]
+"52
+[; ;./matrix_mult.h: 52: void mat_fill_zero(Matrix *);
+[v _mat_fill_zero `(v ~T0 @X0 0 ef1`*S1 ]
+"3 matrix_mult.c
+[; ;matrix_mult.c: 3: void mat_init(unsigned char rows, unsigned char columns, Matrix* matrix) {
+[v _mat_init `(v ~T0 @X0 1 ef3`uc`uc`*S1 ]
+{
+[e :U _mat_init ]
+[v _rows `uc ~T0 @X0 1 r1 ]
+[v _columns `uc ~T0 @X0 1 r2 ]
+[v _matrix `*S1 ~T0 @X0 1 r3 ]
+[f ]
+"5
+[; ;matrix_mult.c: 5:     matrix->rows = rows;
+[e = . *U _matrix 0 _rows ]
+"6
+[; ;matrix_mult.c: 6:     matrix->columns = columns;
+[e = . *U _matrix 1 _columns ]
+"7
+[; ;matrix_mult.c: 7:     mat_fill_zero(matrix);
+[e ( _mat_fill_zero (1 _matrix ]
+"9
+[; ;matrix_mult.c: 9:     return;
+[e $UE 2  ]
+"10
+[; ;matrix_mult.c: 10: }
+[e :UE 2 ]
+}
+"12
+[; ;matrix_mult.c: 12: void mat_set(unsigned char row, unsigned char column, float element, Matrix* matrix) {
+[v _mat_set `(v ~T0 @X0 1 ef4`uc`uc`f`*S1 ]
+{
+[e :U _mat_set ]
+[v _row `uc ~T0 @X0 1 r1 ]
+[v _column `uc ~T0 @X0 1 r2 ]
+[v _element `f ~T0 @X0 1 r3 ]
+[v _matrix `*S1 ~T0 @X0 1 r4 ]
+[f ]
+"14
+[; ;matrix_mult.c: 14:     matrix->elements[(row - 1) * matrix->columns + (column - 1)] = element;
+[e = *U + &U . *U _matrix 2 * -> -> + * - -> _row `i -> 1 `i -> . *U _matrix 1 `i - -> _column `i -> 1 `i `ui `ux -> -> # *U &U . *U _matrix 2 `ui `ux _element ]
+"16
+[; ;matrix_mult.c: 16:     return;
+[e $UE 3  ]
+"17
+[; ;matrix_mult.c: 17: }
+[e :UE 3 ]
+}
+"19
+[; ;matrix_mult.c: 19: float mat_get(unsigned char row, unsigned char column, Matrix* matrix) {
+[v _mat_get `(f ~T0 @X0 1 ef3`uc`uc`*S1 ]
+{
+[e :U _mat_get ]
+[v _row `uc ~T0 @X0 1 r1 ]
+[v _column `uc ~T0 @X0 1 r2 ]
+[v _matrix `*S1 ~T0 @X0 1 r3 ]
+[f ]
+"20
+[; ;matrix_mult.c: 20:     return matrix->elements[(row - 1) * matrix->columns + (column - 1)];
+[e ) *U + &U . *U _matrix 2 * -> -> + * - -> _row `i -> 1 `i -> . *U _matrix 1 `i - -> _column `i -> 1 `i `ui `ux -> -> # *U &U . *U _matrix 2 `ui `ux ]
+[e $UE 4  ]
+"21
+[; ;matrix_mult.c: 21: }
+[e :UE 4 ]
+}
+"23
+[; ;matrix_mult.c: 23: void mat_fill_zero(Matrix *matrix) {
+[v _mat_fill_zero `(v ~T0 @X0 1 ef1`*S1 ]
+{
+[e :U _mat_fill_zero ]
+[v _matrix `*S1 ~T0 @X0 1 r1 ]
+[f ]
+"25
+[; ;matrix_mult.c: 25:     for (int i = 0; i < 4; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 4 `i 6  ]
+[e $U 7  ]
+[e :U 6 ]
+{
+"26
+[; ;matrix_mult.c: 26:         matrix->elements[i] = 0;
+[e = *U + &U . *U _matrix 2 * -> -> _i `ui `ux -> -> # *U &U . *U _matrix 2 `ui `ux -> -> 0 `i `f ]
+"27
+[; ;matrix_mult.c: 27:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 4 `i 6  ]
+[e :U 7 ]
+}
+"29
+[; ;matrix_mult.c: 29:     return;
+[e $UE 5  ]
+"30
+[; ;matrix_mult.c: 30: }
+[e :UE 5 ]
+}
+"32
+[; ;matrix_mult.c: 32: void mat_multiply(Matrix* matrixA, Matrix* matrixB, Matrix* matrixC) {
+[v _mat_multiply `(v ~T0 @X0 1 ef3`*S1`*S1`*S1 ]
+{
+[e :U _mat_multiply ]
+[v _matrixA `*S1 ~T0 @X0 1 r1 ]
+[v _matrixB `*S1 ~T0 @X0 1 r2 ]
+[v _matrixC `*S1 ~T0 @X0 1 r3 ]
+[f ]
+"38
+[; ;matrix_mult.c: 38:     mat_init(matrixA->rows, matrixB->columns, matrixC);
+[e ( _mat_init (3 , , . *U _matrixA 0 . *U _matrixB 1 _matrixC ]
+"39
+[; ;matrix_mult.c: 39:     mat_fill_zero(matrixC);
+[e ( _mat_fill_zero (1 _matrixC ]
+"41
+[; ;matrix_mult.c: 41:     for (int i = 1; i <= matrixC->rows; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 1 `i ]
+[e $U 13  ]
+[e :U 10 ]
+{
+"42
+[; ;matrix_mult.c: 42:         for (int j = 1; j <= matrixC->columns; j++) {
+{
+[v _j `i ~T0 @X0 1 a ]
+[e = _j -> 1 `i ]
+[e $U 17  ]
+[e :U 14 ]
+{
+"43
+[; ;matrix_mult.c: 43:             for (int k = 1; k <= matrixA->columns; k++) {
+{
+[v _k `i ~T0 @X0 1 a ]
+[e = _k -> 1 `i ]
+[e $U 21  ]
+[e :U 18 ]
+{
+"44
+[; ;matrix_mult.c: 44:                 mat_set(i, j, mat_get(i, j, matrixC) + mat_get(i, k, matrixA) * mat_get(k, j, matrixB), matrixC);
+[e ( _mat_set (4 , , , -> _i `uc -> _j `uc + ( _mat_get (3 , , -> _i `uc -> _j `uc _matrixC * ( _mat_get (3 , , -> _i `uc -> _k `uc _matrixA ( _mat_get (3 , , -> _k `uc -> _j `uc _matrixB _matrixC ]
+"45
+[; ;matrix_mult.c: 45:             }
+}
+[e ++ _k -> 1 `i ]
+[e :U 21 ]
+[e $ <= _k -> . *U _matrixA 1 `i 18  ]
+[e :U 19 ]
+}
+"46
+[; ;matrix_mult.c: 46:         }
+}
+[e ++ _j -> 1 `i ]
+[e :U 17 ]
+[e $ <= _j -> . *U _matrixC 1 `i 14  ]
+[e :U 15 ]
+}
+"47
+[; ;matrix_mult.c: 47:     }
+}
+[e ++ _i -> 1 `i ]
+[e :U 13 ]
+[e $ <= _i -> . *U _matrixC 0 `i 10  ]
+[e :U 11 ]
+}
+"49
+[; ;matrix_mult.c: 49: }
+[e :UE 9 ]
+}
+"53
+[; ;matrix_mult.c: 53: void mat_transpose(Matrix* matrix, Matrix* result) {
+[v _mat_transpose `(v ~T0 @X0 1 ef2`*S1`*S1 ]
+{
+[e :U _mat_transpose ]
+[v _matrix `*S1 ~T0 @X0 1 r1 ]
+[v _result `*S1 ~T0 @X0 1 r2 ]
+[f ]
+"58
+[; ;matrix_mult.c: 58:     mat_init(2, 2, result);
+[e ( _mat_init (3 , , -> -> 2 `i `uc -> -> 2 `i `uc _result ]
+"60
+[; ;matrix_mult.c: 60:     float matrix_1_2 = mat_get(1, 2, matrix);
+[v _matrix_1_2 `f ~T0 @X0 1 a ]
+[e = _matrix_1_2 ( _mat_get (3 , , -> -> 1 `i `uc -> -> 2 `i `uc _matrix ]
+"61
+[; ;matrix_mult.c: 61:     mat_set(2, 1, matrix_1_2, result);
+[e ( _mat_set (4 , , , -> -> 2 `i `uc -> -> 1 `i `uc _matrix_1_2 _result ]
+"63
+[; ;matrix_mult.c: 63:     float matrix_1_1 = mat_get(1, 1, matrix);
+[v _matrix_1_1 `f ~T0 @X0 1 a ]
+[e = _matrix_1_1 ( _mat_get (3 , , -> -> 1 `i `uc -> -> 1 `i `uc _matrix ]
+"64
+[; ;matrix_mult.c: 64:     mat_set(1, 1, matrix_1_1, result);
+[e ( _mat_set (4 , , , -> -> 1 `i `uc -> -> 1 `i `uc _matrix_1_1 _result ]
+"66
+[; ;matrix_mult.c: 66:     float matrix_2_1 = mat_get(2, 1, matrix);
+[v _matrix_2_1 `f ~T0 @X0 1 a ]
+[e = _matrix_2_1 ( _mat_get (3 , , -> -> 2 `i `uc -> -> 1 `i `uc _matrix ]
+"67
+[; ;matrix_mult.c: 67:     mat_set(1, 2, matrix_2_1, result);
+[e ( _mat_set (4 , , , -> -> 1 `i `uc -> -> 2 `i `uc _matrix_2_1 _result ]
+"69
+[; ;matrix_mult.c: 69:     float matrix_2_2 = mat_get(2, 2, matrix);
+[v _matrix_2_2 `f ~T0 @X0 1 a ]
+[e = _matrix_2_2 ( _mat_get (3 , , -> -> 2 `i `uc -> -> 2 `i `uc _matrix ]
+"70
+[; ;matrix_mult.c: 70:     mat_set(2, 2, matrix_2_2, result);
+[e ( _mat_set (4 , , , -> -> 2 `i `uc -> -> 2 `i `uc _matrix_2_2 _result ]
+"71
+[; ;matrix_mult.c: 71: }
+[e :UE 22 ]
+}
