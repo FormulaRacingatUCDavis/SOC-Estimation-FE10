@@ -101,7 +101,7 @@ void main(void)
 
 
 // Function declarations
-float VOC(float SOC, float Voc0);
+float VOC(float soc);
 float hk(float SOC_val, float I, float Voc0, float R0);
 void fk(Matrix* xhatk_1, float I, float dt, float Cbat, float Cc, float Rc, Matrix* fk_);
 void EKF(Matrix* xhatk_1, Matrix* Pk_1, float I, float Ik_1, float V, float Voc0,
@@ -116,12 +116,33 @@ void EKF(Matrix* xhatk_1, Matrix* Pk_1, float I, float Ik_1, float V, float Voc0
 //------------------------------- SMALLER CALCULATION FUNCTIONS --------------------------------
 
 // Functions we need to calculate
-float VOC(float SOC, float Voc0) {
-	return 0.007 * SOC + Voc0;
+float VOC(float soc) {
+  int8_t soc_int = (int8_t)soc;
+
+  const uint16_t voc_lt[101] = {
+      28930, 29662, 30239, 30689, 31101, 31510, 31915, 32304, 32661, 32960,
+      33245, 33466, 33703, 33931, 34100, 34159, 34222, 34313, 34372, 34451,
+      34539, 34650, 34781, 34921, 35038, 35172, 35276, 35374, 35472, 35560,
+      35646, 35744, 35838, 35940, 36028, 36094, 36150, 36248, 36320, 36395,
+      36467, 36539, 36624, 36726, 36788, 36889, 36987, 37043, 37145, 37249,
+      37331, 37426, 37511, 37615, 37678, 37782, 37854, 37962, 38053, 38155,
+      38259, 38364, 38475, 38573, 38667, 38769, 38854, 38923, 39030, 39103,
+      39188, 39289, 39390, 39501, 39609, 39710, 39824, 39971, 40078, 40209,
+      40320, 40405, 40408, 40496, 40539, 40582, 40600, 40639, 40657, 40694,
+      40700, 40714, 40757, 40794, 40837, 40906, 40968, 41070, 41213, 41427,
+      41668};
+
+  if (soc_int < 0) {
+    return 4.2f;
+  } else if (soc_int > 100) {
+    return 2.5f;
+  } else {
+    return ((float)voc_lt[soc_int]) / 10000;
+  }
 }
 
 float hk(float SOC_val, float I, float Voc0, float R0) {
-	return VOC(SOC_val, Voc0) - (R0 * I);		// hk_ is calculated voltage?
+	return VOC(SOC_val) - (R0 * I);		// hk_ is calculated voltage?
 }
 
 void fk(Matrix* xhatk_1, float I, float dt, float Cbat, float Cc, float Rc, Matrix* fk_) {
@@ -233,9 +254,7 @@ void EKF(Matrix* xhatk_1, Matrix* Pk_1, float I, float Ik_1, float V, float Voc0
 void main(void) {
     
     SYSTEM_Initialize();
-    
-    ADCC_DischargeSampleCapacitor();
-
+ 
 	// Initializing probability matrices
     Matrix Aprime;
     mat_init(2, 2, &Aprime);
@@ -331,17 +350,26 @@ void main(void) {
     static Frame_t rx_frame; 
     Frame_Init(&rx_frame, rx_buf, RX_BUFFER_LENGTH);
     
+    while (1)
+    {
+     
+        if(UART1_is_rx_ready() && UART1_is_tx_ready()){
+            UART1_Write(UART1_Read()); 
+        }
+        // Add your application code
+    }
+    
     while (1) { 
         while(UART1_is_rx_ready())
         {
-            FrameResult_t res = Frame_Update(rx_frame, UART1_Read());
+            uint8_t b = UART1_Read();
+            UART1_Write(b);
+            FrameResult_t res = Frame_Update(&rx_frame, b);
             if(res == FRAME_COMPLETE){
-                int16_t vc_int = rx_frame->buf[0] + (rx_frame->buf[1] << 8); 
-                Vc = (float)vc_int;
-                int16_t v_int = rx_frame->buf[2] + (rx_frame->buf[3] << 8); 
-                V = (float)v_int;
-                int16_t i_int = rx_frame->buf[4] + (rx_frame->buf[5] << 8); 
-                I = (float)i_int;
+                uint16_t v_int = rx_frame.buf[2] + (rx_frame.buf[3] << 8); 
+                V = ((float)v_int) / 100.0f / 120.0f;  // 120 cells series
+                int16_t i_int = rx_frame.buf[4] + (rx_frame.buf[5] << 8); 
+                I = ((float)i_int) / 10.0f / 4.0f;   // 4 cells parallel
                 break;
             }
         }
@@ -370,8 +398,8 @@ void main(void) {
         }
         
         uint8_t SOC = (uint8_t)(mat_get(1, 1, &xhatCorrected) * 100);
-        while(!UART1_is_tx_ready());
-        UART1_Write(SOC); // send estimated SOC
+        //while(!UART1_is_tx_ready());
+        //UART1_Write(SOC); // send estimated SOC
  
     }
 

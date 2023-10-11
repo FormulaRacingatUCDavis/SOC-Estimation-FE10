@@ -30,7 +30,7 @@ typedef enum
 
 // PUBLIC FUNCTION PROTOTYPES
 void Frame_Init(Frame_t* frame, uint8_t* buf, uint8_t len);
-FrameResult_t Frame_Update(Frame_t* serial);
+FrameResult_t Frame_Update(Frame_t* frame, uint8_t b);
 
 #endif	/* XC_HEADER_TEMPLATE_H */
 

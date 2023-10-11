@@ -4,12 +4,12 @@
 # 288 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "D:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\language_support.h" 1 3
+# 1 "C:/Users/leoja/.mchp_packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "mcc_generated_files/device_config.c" 2
 # 50 "mcc_generated_files/device_config.c"
 #pragma config FEXTOSC = OFF
-#pragma config RSTOSC = EXTOSC
+#pragma config RSTOSC = HFINTOSC_64MHZ
 
 
 #pragma config CLKOUTEN = OFF

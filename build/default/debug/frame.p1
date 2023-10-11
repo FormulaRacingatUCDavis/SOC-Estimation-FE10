@@ -1,0 +1,200 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"15 ./frame.h
+[; ;./frame.h: 15: {
+[s S1 `*uc 1 `uc 1 `uc 1 `a 1 ]
+[n S1 . buf len i escaped ]
+"28 frame.c
+[; ;frame.c: 28: FrameResult_t Frame_Update(Frame_t* frame, uint8_t b)
+[c E42 0 1 2 3 .. ]
+[n E42 . FRAME_COMPLETE FRAME_INCOMPLETE FRAME_OVERRUN FRAME_INVALID_ESCAPE  ]
+"20 frame.c
+[; ;frame.c: 20: void Frame_Init(Frame_t* frame, uint8_t* buf, uint8_t len)
+[v _Frame_Init `(v ~T0 @X0 1 ef3`*S1`*uc`uc ]
+"21
+[; ;frame.c: 21: {
+{
+[e :U _Frame_Init ]
+"20
+[; ;frame.c: 20: void Frame_Init(Frame_t* frame, uint8_t* buf, uint8_t len)
+[v _frame `*S1 ~T0 @X0 1 r1 ]
+[v _buf `*uc ~T0 @X0 1 r2 ]
+[v _len `uc ~T0 @X0 1 r3 ]
+"21
+[; ;frame.c: 21: {
+[f ]
+"22
+[; ;frame.c: 22:     frame->buf = buf;
+[e = . *U _frame 0 _buf ]
+"23
+[; ;frame.c: 23:     frame->len = len;
+[e = . *U _frame 1 _len ]
+"24
+[; ;frame.c: 24:     frame->i = 0;
+[e = . *U _frame 2 -> -> 0 `i `uc ]
+"25
+[; ;frame.c: 25:     frame->escaped = 0;
+[e = . *U _frame 3 -> -> 0 `i `a ]
+"26
+[; ;frame.c: 26: }
+[e :UE 2 ]
+}
+"28
+[; ;frame.c: 28: FrameResult_t Frame_Update(Frame_t* frame, uint8_t b)
+[v _Frame_Update `(E42 ~T0 @X0 1 ef2`*S1`uc ]
+"29
+[; ;frame.c: 29: {
+{
+[e :U _Frame_Update ]
+"28
+[; ;frame.c: 28: FrameResult_t Frame_Update(Frame_t* frame, uint8_t b)
+[v _frame `*S1 ~T0 @X0 1 r1 ]
+[v _b `uc ~T0 @X0 1 r2 ]
+"29
+[; ;frame.c: 29: {
+[f ]
+"30
+[; ;frame.c: 30:     if(frame->escaped)
+[e $ ! != -> . *U _frame 3 `i -> 0 `i 4  ]
+"31
+[; ;frame.c: 31:     {
+{
+"32
+[; ;frame.c: 32:         if(b == 0x0A)
+[e $ ! == -> _b `i -> 10 `i 5  ]
+"33
+[; ;frame.c: 33:         {
+{
+"34
+[; ;frame.c: 34:             frame->i = 0;
+[e = . *U _frame 2 -> -> 0 `i `uc ]
+"35
+[; ;frame.c: 35:         }
+}
+[e $U 6  ]
+"36
+[; ;frame.c: 36:         else if(b == 0x05)
+[e :U 5 ]
+[e $ ! == -> _b `i -> 5 `i 7  ]
+"37
+[; ;frame.c: 37:         {
+{
+"38
+[; ;frame.c: 38:             if(frame->i >= frame->len)
+[e $ ! >= -> . *U _frame 2 `i -> . *U _frame 1 `i 8  ]
+"39
+[; ;frame.c: 39:             {
+{
+"40
+[; ;frame.c: 40:                 return FRAME_OVERRUN;
+[e ) . `E42 2 ]
+[e $UE 3  ]
+"41
+[; ;frame.c: 41:             }
+}
+[e :U 8 ]
+"42
+[; ;frame.c: 42:             frame->buf[frame->i] = 0x05;
+[e = *U + . *U _frame 0 * -> . *U _frame 2 `ux -> -> # *U . *U _frame 0 `ui `ux -> -> 5 `i `uc ]
+"43
+[; ;frame.c: 43:             frame->i++;
+[e ++ . *U _frame 2 -> -> 1 `i `uc ]
+"44
+[; ;frame.c: 44:         }
+}
+[e $U 9  ]
+"45
+[; ;frame.c: 45:         else if(b == 0x0B)
+[e :U 7 ]
+[e $ ! == -> _b `i -> 11 `i 10  ]
+"46
+[; ;frame.c: 46:         {
+{
+"47
+[; ;frame.c: 47:             return FRAME_COMPLETE;
+[e ) . `E42 0 ]
+[e $UE 3  ]
+"48
+[; ;frame.c: 48:         }
+}
+[e $U 11  ]
+"49
+[; ;frame.c: 49:         else
+[e :U 10 ]
+"50
+[; ;frame.c: 50:         {
+{
+"51
+[; ;frame.c: 51:             return FRAME_INVALID_ESCAPE;
+[e ) . `E42 3 ]
+[e $UE 3  ]
+"52
+[; ;frame.c: 52:         }
+}
+[e :U 11 ]
+[e :U 9 ]
+[e :U 6 ]
+"53
+[; ;frame.c: 53:     }
+}
+[e $U 12  ]
+"54
+[; ;frame.c: 54:     else
+[e :U 4 ]
+"55
+[; ;frame.c: 55:     {
+{
+"56
+[; ;frame.c: 56:         if(b == 0x05)
+[e $ ! == -> _b `i -> 5 `i 13  ]
+"57
+[; ;frame.c: 57:         {
+{
+"58
+[; ;frame.c: 58:             frame->escaped = 1;
+[e = . *U _frame 3 -> -> 1 `i `a ]
+"59
+[; ;frame.c: 59:         }
+}
+[e $U 14  ]
+"60
+[; ;frame.c: 60:         else
+[e :U 13 ]
+"61
+[; ;frame.c: 61:         {
+{
+"62
+[; ;frame.c: 62:             if(frame->i >= frame->len)
+[e $ ! >= -> . *U _frame 2 `i -> . *U _frame 1 `i 15  ]
+"63
+[; ;frame.c: 63:             {
+{
+"64
+[; ;frame.c: 64:                 return FRAME_OVERRUN;
+[e ) . `E42 2 ]
+[e $UE 3  ]
+"65
+[; ;frame.c: 65:             }
+}
+[e :U 15 ]
+"66
+[; ;frame.c: 66:             frame->buf[frame->i] = b;
+[e = *U + . *U _frame 0 * -> . *U _frame 2 `ux -> -> # *U . *U _frame 0 `ui `ux _b ]
+"67
+[; ;frame.c: 67:             frame->i++;
+[e ++ . *U _frame 2 -> -> 1 `i `uc ]
+"68
+[; ;frame.c: 68:         }
+}
+[e :U 14 ]
+"69
+[; ;frame.c: 69:     }
+}
+[e :U 12 ]
+"70
+[; ;frame.c: 70:     return FRAME_INCOMPLETE;
+[e ) . `E42 1 ]
+[e $UE 3  ]
+"71
+[; ;frame.c: 71: }
+[e :UE 3 ]
+}

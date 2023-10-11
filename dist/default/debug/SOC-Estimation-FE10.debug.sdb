@@ -3,73 +3,81 @@
 [d edition pro ]
 [d chip 18LF26K83 ]
 [d frameptr 16353 ]
-"113 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/adcc.c
-[e E22459 . `uc
-channel_VSS 59
-channel_Temp 60
-channel_DAC1 61
-channel_FVR_Buffer1 62
-channel_FVR_Buffer2 63
+"357 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\main.c
+[e E23424 . `uc
+FRAME_COMPLETE 0
+FRAME_INCOMPLETE 1
+FRAME_OVERRUN 2
+FRAME_INVALID_ESCAPE 3
 ]
-"22 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\serial.c
-[e E22878 . `uc
-SERIAL_SUCCESS 0
-SERIAL_NOMSG 1
-SERIAL_OVERRUN 2
+"28 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\frame.c
+[e E42 . `uc
+FRAME_COMPLETE 0
+FRAME_INCOMPLETE 1
+FRAME_OVERRUN 2
+FRAME_INVALID_ESCAPE 3
 ]
-"32 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\expf.c
+"31 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\expf.c
 [v _expf expf `(f  1 e 4 0 ]
-"4 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fleq.c
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fabsf.c
+[v _fabsf fabsf `(f  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
-"4 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\flge.c
 [v ___flge __flge `(b  1 e 0 0 ]
-"15 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flneg.c
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\flneg.c
 [v ___flneg __flneg `(d  1 e 4 0 ]
-"62 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\float.c
+"62 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"43 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
+"43 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
-"86 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftadd.c
+"86 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
-"54 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftdiv.c
+"54 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 4 0 ]
-"62 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftmul.c
+"62 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
-"19 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\ftsub.c
+"19 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
-"55 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\powf.c
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nanf.c
+[v _nanf nanf `(f  1 e 4 0 ]
+"53 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\powf.c
 [v _powf powf `JJ(f  1 e 4 0 ]
-"4 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\scalbnf.c
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\scalbnf.c
 [v _scalbnf scalbnf `(f  1 e 4 0 ]
-"10 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
-"11 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+"11 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"24 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sqrtf.c
+"22 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sqrtf.c
 [v _sqrtf sqrtf `(f  1 e 4 0 ]
-"15 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
-"15 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul32.c
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"91 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul64.c
+"91 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"10 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"117 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\main.c
+"20 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\frame.c
+[v _Frame_Init Frame_Init `(v  1 e 1 0 ]
+"28
+[v _Frame_Update Frame_Update `(E23424  1 e 1 0 ]
+"119 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\main.c
 [v _VOC VOC `(f  1 e 4 0 ]
-"121
+"144
 [v _hk hk `(f  1 e 4 0 ]
-"125
+"148
 [v _fk fk `(v  1 e 1 0 ]
-"142
+"165
 [v _EKF EKF `(v  1 e 1 0 ]
-"231
+"254
 [v _main main `(v  1 e 1 0 ]
-"3 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\matrix_mult.c
+"3 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\matrix_mult.c
 [v _mat_init mat_init `(v  1 e 1 0 ]
 "12
 [v _mat_set mat_set `(v  1 e 1 0 ]
@@ -81,21 +89,27 @@ SERIAL_OVERRUN 2
 [v _mat_multiply mat_multiply `(v  1 e 1 0 ]
 "53
 [v _mat_transpose mat_transpose `(v  1 e 1 0 ]
-"62 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/adcc.c
-[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
-"174
-[v _ADCC_DischargeSampleCapacitor ADCC_DischargeSampleCapacitor `(v  1 e 1 0 ]
-"50 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/mcc.c
+"52 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"58
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"50 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "60
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "74
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"55 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/pin_manager.c
+"55 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"60 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/tmr0.c
+"61 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
-"66 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/uart1.c
+"121
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"134
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"138
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"66 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
 "126
 [v _UART1_is_rx_ready UART1_is_rx_ready `(a  1 e 1 0 ]
@@ -117,60 +131,84 @@ SERIAL_OVERRUN 2
 [v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 "208
 [v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
-"104 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\serial.c
-[v _byte_available byte_available `(a  1 s 1 byte_available ]
-"111
-[v _get_byte get_byte `(uc  1 s 1 get_byte ]
-"118
-[v _send_byte_with_escape send_byte_with_escape `(v  1 s 1 send_byte_with_escape ]
-"128
-[v _send_byte send_byte `(v  1 s 1 send_byte ]
-"2987 D:\Program Files\Microchip\xc8\v2.45\pic\include\proc\pic18lf26k83.h
+"3563 C:/Users/leoja/.mchp_packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18lf26k83.h
 [v _TMR0L TMR0L `VEuc  1 e 1 @16310 ]
-"3125
+"3701
 [v _TMR0H TMR0H `VEuc  1 e 1 @16311 ]
-"3379
+"3955
 [v _T0CON0 T0CON0 `VEuc  1 e 1 @16312 ]
-[s S358 . 1 `uc 1 OUTPS 1 0 :4:0 
+[s S410 . 1 `uc 1 OUTPS 1 0 :4:0 
 `uc 1 MD16 1 0 :1:4 
 `uc 1 OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 EN 1 0 :1:7 
 ]
-"3413
-[s S364 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+"3983
+[s S416 . 1 `uc 1 T0OUTPS 1 0 :4:0 
 `uc 1 T0MD16 1 0 :1:4 
 `uc 1 T0OUT 1 0 :1:5 
 `uc 1 . 1 0 :1:6 
 `uc 1 T0EN 1 0 :1:7 
 ]
-[s S370 . 1 `uc 1 OUTPS0 1 0 :1:0 
+[s S422 . 1 `uc 1 OUTPS0 1 0 :1:0 
 `uc 1 OUTPS1 1 0 :1:1 
 `uc 1 OUTPS2 1 0 :1:2 
 `uc 1 OUTPS3 1 0 :1:3 
 `uc 1 T016BIT 1 0 :1:4 
 ]
-[s S376 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
-`uc 1 T0OUTPS1 1 0 :1:1 
-`uc 1 T0OUTPS2 1 0 :1:2 
-`uc 1 T0OUTPS3 1 0 :1:3 
-]
-[u S381 . 1 `S358 1 . 1 0 `S364 1 . 1 0 `S370 1 . 1 0 `S376 1 . 1 0 ]
-[v _T0CON0bits T0CON0bits `VES381  1 e 1 @16312 ]
-"3503
+[u S428 . 1 `S410 1 . 1 0 `S416 1 . 1 0 `S422 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES428  1 e 1 @16312 ]
+"4053
 [v _T0CON1 T0CON1 `VEuc  1 e 1 @16313 ]
-"3645
+"4195
 [v _LATA LATA `VEuc  1 e 1 @16314 ]
-"3757
+"4307
 [v _LATB LATB `VEuc  1 e 1 @16315 ]
-"3869
+"4419
 [v _LATC LATC `VEuc  1 e 1 @16316 ]
-"3981
+"4531
 [v _TRISA TRISA `VEuc  1 e 1 @16322 ]
-"4043
+"4593
 [v _TRISB TRISB `VEuc  1 e 1 @16323 ]
-"4105
+"4655
 [v _TRISC TRISC `VEuc  1 e 1 @16324 ]
+[s S816 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"5017
+[s S824 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S827 . 1 `S816 1 . 1 0 `S824 1 . 1 0 ]
+[v _INTCON0bits INTCON0bits `VES827  1 e 1 @16338 ]
+[s S354 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
+`uc 1 I2C1IE 1 0 :1:1 
+`uc 1 I2C1EIE 1 0 :1:2 
+`uc 1 U1RXIE 1 0 :1:3 
+`uc 1 U1TXIE 1 0 :1:4 
+`uc 1 U1EIE 1 0 :1:5 
+`uc 1 U1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"25404
+[s S363 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+[s S369 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+[u S374 . 1 `S354 1 . 1 0 `S363 1 . 1 0 `S369 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES374  1 e 1 @14739 ]
 [s S145 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
 `uc 1 I2C1IF 1 0 :1:1 
 `uc 1 I2C1EIF 1 0 :1:2 
@@ -252,69 +290,67 @@ SERIAL_OVERRUN 2
 [v _INLVLE INLVLE `VEuc  1 e 1 @14980 ]
 "32425
 [v _U1RXPPS U1RXPPS `VEuc  1 e 1 @15079 ]
-"46630
+"47050
 [v _U1RXB U1RXB `VEuc  1 e 1 @15848 ]
-"46688
+"47108
 [v _U1TXB U1TXB `VEuc  1 e 1 @15850 ]
-"46753
+"47173
 [v _U1P1L U1P1L `VEuc  1 e 1 @15852 ]
-"46773
+"47193
 [v _U1P1H U1P1H `VEuc  1 e 1 @15853 ]
-"46800
+"47220
 [v _U1P2L U1P2L `VEuc  1 e 1 @15854 ]
-"46820
+"47240
 [v _U1P2H U1P2H `VEuc  1 e 1 @15855 ]
-"46847
+"47267
 [v _U1P3L U1P3L `VEuc  1 e 1 @15856 ]
-"46867
+"47287
 [v _U1P3H U1P3H `VEuc  1 e 1 @15857 ]
-"46887
+"47307
 [v _U1CON0 U1CON0 `VEuc  1 e 1 @15858 ]
 [s S177 . 1 `uc 1 MODE0 1 0 :1:0 
 `uc 1 MODE1 1 0 :1:1 
 `uc 1 MODE2 1 0 :1:2 
-`uc 1 MODE3 1 0 :1:3 
 ]
-"46920
-[s S182 . 1 `uc 1 U1MODE 1 0 :4:0 
+"47338
+[s S181 . 1 `uc 1 U1MODE 1 0 :4:0 
 `uc 1 U1RXEN 1 0 :1:4 
 `uc 1 U1TXEN 1 0 :1:5 
 `uc 1 U1ABDEN 1 0 :1:6 
 `uc 1 U1BRGS 1 0 :1:7 
 ]
-"46920
-[s S188 . 1 `uc 1 U1MODE0 1 0 :1:0 
+"47338
+[s S187 . 1 `uc 1 U1MODE0 1 0 :1:0 
 `uc 1 U1MODE1 1 0 :1:1 
 `uc 1 U1MODE2 1 0 :1:2 
-`uc 1 U1MODE3 1 0 :1:3 
 ]
-"46920
-[s S193 . 1 `uc 1 MODE 1 0 :4:0 
+"47338
+[s S191 . 1 `uc 1 MODE 1 0 :4:0 
 `uc 1 RXEN 1 0 :1:4 
 `uc 1 TXEN 1 0 :1:5 
 `uc 1 ABDEN 1 0 :1:6 
 `uc 1 BRGS 1 0 :1:7 
 ]
-"46920
-[u S199 . 1 `S177 1 . 1 0 `S182 1 . 1 0 `S188 1 . 1 0 `S193 1 . 1 0 ]
-"46920
-"46920
-[v _U1CON0bits U1CON0bits `VES199  1 e 1 @15858 ]
-"47015
+"47338
+[u S197 . 1 `S177 1 . 1 0 `S181 1 . 1 0 `S187 1 . 1 0 `S191 1 . 1 0 ]
+"47338
+"47338
+[v _U1CON0bits U1CON0bits `VES197  1 e 1 @15858 ]
+"47423
 [v _U1CON1 U1CON1 `VEuc  1 e 1 @15859 ]
-"47095
+"47503
 [v _U1CON2 U1CON2 `VEuc  1 e 1 @15860 ]
-"47244
+"47652
 [v _U1BRGL U1BRGL `VEuc  1 e 1 @15861 ]
-"47264
+"47672
 [v _U1BRGH U1BRGH `VEuc  1 e 1 @15862 ]
-"47284
+"47692
 [v _U1FIFO U1FIFO `VEuc  1 e 1 @15863 ]
-"47414
+"47822
 [v _U1UIR U1UIR `VEuc  1 e 1 @15864 ]
-"47470
+"47878
 [v _U1ERRIR U1ERRIR `VEuc  1 e 1 @15865 ]
-[s S227 . 1 `uc 1 TXCIF 1 0 :1:0 
+[s S223 . 1 `uc 1 TXCIF 1 0 :1:0 
 `uc 1 RXFOIF 1 0 :1:1 
 `uc 1 RXBKIF 1 0 :1:2 
 `uc 1 FERIF 1 0 :1:3 
@@ -323,8 +359,8 @@ SERIAL_OVERRUN 2
 `uc 1 PERIF 1 0 :1:6 
 `uc 1 TXMTIF 1 0 :1:7 
 ]
-"47497
-[s S236 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+"47905
+[s S232 . 1 `uc 1 U1TXCIF 1 0 :1:0 
 `uc 1 U1RXFOIF 1 0 :1:1 
 `uc 1 U1RXBKIF 1 0 :1:2 
 `uc 1 U1FERIF 1 0 :1:3 
@@ -333,257 +369,31 @@ SERIAL_OVERRUN 2
 `uc 1 U1PERIF 1 0 :1:6 
 `uc 1 U1TXMTIF 1 0 :1:7 
 ]
-"47497
-[u S245 . 1 `S227 1 . 1 0 `S236 1 . 1 0 ]
-"47497
-"47497
-[v _U1ERRIRbits U1ERRIRbits `VES245  1 e 1 @15865 ]
-"47582
+"47905
+[u S241 . 1 `S223 1 . 1 0 `S232 1 . 1 0 ]
+"47905
+"47905
+[v _U1ERRIRbits U1ERRIRbits `VES241  1 e 1 @15865 ]
+"47990
 [v _U1ERRIE U1ERRIE `VEuc  1 e 1 @15866 ]
-"48740
-[v _ADLTHL ADLTHL `VEuc  1 e 1 @16094 ]
-"48868
-[v _ADLTHH ADLTHH `VEuc  1 e 1 @16095 ]
-"49003
-[v _ADUTHL ADUTHL `VEuc  1 e 1 @16096 ]
-"49131
-[v _ADUTHH ADUTHH `VEuc  1 e 1 @16097 ]
-"49266
-[v _ADERRL ADERRL `VEuc  1 e 1 @16098 ]
-"49394
-[v _ADERRH ADERRH `VEuc  1 e 1 @16099 ]
-"49529
-[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @16100 ]
-"49657
-[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @16101 ]
-"49792
-[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @16102 ]
-"49920
-[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @16103 ]
-"50057
-[v _ADACCL ADACCL `VEuc  1 e 1 @16104 ]
-"50185
-[v _ADACCH ADACCH `VEuc  1 e 1 @16105 ]
-"50313
-[v _ADACCU ADACCU `VEuc  1 e 1 @16106 ]
-"50369
-[v _ADCNT ADCNT `VEuc  1 e 1 @16107 ]
-"50497
-[v _ADRPT ADRPT `VEuc  1 e 1 @16108 ]
-"50632
-[v _ADPREVL ADPREVL `VEuc  1 e 1 @16109 ]
-"50760
-[v _ADPREVH ADPREVH `VEuc  1 e 1 @16110 ]
-"50895
-[v _ADRESL ADRESL `VEuc  1 e 1 @16111 ]
-"51023
-[v _ADRESH ADRESH `VEuc  1 e 1 @16112 ]
-"51143
-[v _ADPCH ADPCH `VEuc  1 e 1 @16113 ]
-"51254
-[v _ADACQL ADACQL `VEuc  1 e 1 @16115 ]
-"51382
-[v _ADACQH ADACQH `VEuc  1 e 1 @16116 ]
-"51474
-[v _ADCAP ADCAP `VEuc  1 e 1 @16117 ]
-"51573
-[v _ADPREL ADPREL `VEuc  1 e 1 @16118 ]
-"51701
-[v _ADPREH ADPREH `VEuc  1 e 1 @16119 ]
-"51793
-[v _ADCON0 ADCON0 `VEuc  1 e 1 @16120 ]
-[s S453 . 1 `uc 1 GO 1 0 :1:0 
-`uc 1 . 1 0 :1:1 
-`uc 1 FM 1 0 :2:2 
-`uc 1 CS 1 0 :1:4 
-`uc 1 . 1 0 :1:5 
-`uc 1 CONT 1 0 :1:6 
-`uc 1 ON 1 0 :1:7 
-]
-"51831
-[s S461 . 1 `uc 1 ADGO 1 0 :1:0 
-`uc 1 . 1 0 :1:1 
-`uc 1 ADFM 1 0 :2:2 
-`uc 1 ADCS 1 0 :1:4 
-`uc 1 . 1 0 :1:5 
-`uc 1 ADCONT 1 0 :1:6 
-`uc 1 ADON 1 0 :1:7 
-]
-"51831
-[s S469 . 1 `uc 1 DONE 1 0 :1:0 
-`uc 1 . 1 0 :1:1 
-`uc 1 FM0 1 0 :1:2 
-]
-"51831
-[s S473 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
-]
-"51831
-[s S475 . 1 `uc 1 GO_nDONE 1 0 :1:0 
-`uc 1 . 1 0 :1:1 
-`uc 1 ADFM0 1 0 :1:2 
-]
-"51831
-[u S479 . 1 `S453 1 . 1 0 `S461 1 . 1 0 `S469 1 . 1 0 `S473 1 . 1 0 `S475 1 . 1 0 ]
-"51831
-"51831
-[v _ADCON0bits ADCON0bits `VES479  1 e 1 @16120 ]
-"51911
-[v _ADCON1 ADCON1 `VEuc  1 e 1 @16121 ]
-[s S708 . 1 `uc 1 DSEN 1 0 :1:0 
-`uc 1 . 1 0 :4:1 
-`uc 1 GPOL 1 0 :1:5 
-`uc 1 IPEN 1 0 :1:6 
-`uc 1 PPOL 1 0 :1:7 
-]
-"51932
-[s S714 . 1 `uc 1 ADDSEN 1 0 :1:0 
-`uc 1 . 1 0 :4:1 
-`uc 1 ADGPOL 1 0 :1:5 
-`uc 1 ADIPEN 1 0 :1:6 
-`uc 1 ADPPOL 1 0 :1:7 
-]
-"51932
-[u S720 . 1 `S708 1 . 1 0 `S714 1 . 1 0 ]
-"51932
-"51932
-[v _ADCON1bits ADCON1bits `VES720  1 e 1 @16121 ]
-"51977
-[v _ADCON2 ADCON2 `VEuc  1 e 1 @16122 ]
-[s S569 . 1 `uc 1 MODE 1 0 :3:0 
-`uc 1 ACLR 1 0 :1:3 
-`uc 1 CRS 1 0 :3:4 
-`uc 1 PSIS 1 0 :1:7 
-]
-"52025
-[s S574 . 1 `uc 1 ADMD0 1 0 :1:0 
-`uc 1 ADMD1 1 0 :1:1 
-`uc 1 ADMD2 1 0 :1:2 
-`uc 1 ADACLR 1 0 :1:3 
-`uc 1 ADCRS0 1 0 :1:4 
-`uc 1 ADCRS1 1 0 :1:5 
-`uc 1 ADCRS2 1 0 :1:6 
-`uc 1 ADPSIS 1 0 :1:7 
-]
-"52025
-[s S583 . 1 `uc 1 ADMD 1 0 :3:0 
-`uc 1 . 1 0 :1:3 
-`uc 1 ADCRS 1 0 :3:4 
-]
-"52025
-[s S587 . 1 `uc 1 MODE0 1 0 :1:0 
-`uc 1 MODE1 1 0 :1:1 
-`uc 1 MODE2 1 0 :1:2 
-`uc 1 . 1 0 :1:3 
-`uc 1 CRS0 1 0 :1:4 
-`uc 1 CRS1 1 0 :1:5 
-`uc 1 CRS2 1 0 :1:6 
-]
-"52025
-[s S595 . 1 `uc 1 MD 1 0 :3:0 
-]
-"52025
-[s S597 . 1 `uc 1 MD0 1 0 :1:0 
-`uc 1 MD1 1 0 :1:1 
-`uc 1 MD2 1 0 :1:2 
-]
-"52025
-[s S601 . 1 `uc 1 ADMODE 1 0 :3:0 
-]
-"52025
-[u S603 . 1 `S569 1 . 1 0 `S574 1 . 1 0 `S583 1 . 1 0 `S587 1 . 1 0 `S595 1 . 1 0 `S597 1 . 1 0 `S601 1 . 1 0 ]
-"52025
-"52025
-[v _ADCON2bits ADCON2bits `VES603  1 e 1 @16122 ]
-"52155
-[v _ADCON3 ADCON3 `VEuc  1 e 1 @16123 ]
-[s S514 . 1 `uc 1 TMD 1 0 :3:0 
-`uc 1 SOI 1 0 :1:3 
-`uc 1 CALC 1 0 :3:4 
-]
-"52190
-[s S518 . 1 `uc 1 ADTMD0 1 0 :1:0 
-`uc 1 ADTMD1 1 0 :1:1 
-`uc 1 ADTMD2 1 0 :1:2 
-`uc 1 ADSOI 1 0 :1:3 
-`uc 1 ADCALC0 1 0 :1:4 
-`uc 1 ADCALC1 1 0 :1:5 
-`uc 1 ADCALC2 1 0 :1:6 
-]
-"52190
-[s S526 . 1 `uc 1 ADTMD 1 0 :3:0 
-`uc 1 . 1 0 :1:3 
-`uc 1 ADCALC 1 0 :3:4 
-]
-"52190
-[s S530 . 1 `uc 1 TMD0 1 0 :1:0 
-`uc 1 TMD1 1 0 :1:1 
-`uc 1 TMD2 1 0 :1:2 
-`uc 1 . 1 0 :1:3 
-`uc 1 CALC0 1 0 :1:4 
-`uc 1 CALC1 1 0 :1:5 
-`uc 1 CALC2 1 0 :1:6 
-]
-"52190
-[u S538 . 1 `S514 1 . 1 0 `S518 1 . 1 0 `S526 1 . 1 0 `S530 1 . 1 0 ]
-"52190
-"52190
-[v _ADCON3bits ADCON3bits `VES538  1 e 1 @16123 ]
-"52285
-[v _ADSTAT ADSTAT `VEuc  1 e 1 @16124 ]
-[s S648 . 1 `uc 1 STAT 1 0 :3:0 
-`uc 1 . 1 0 :1:3 
-`uc 1 MATH 1 0 :1:4 
-`uc 1 LTHR 1 0 :1:5 
-`uc 1 UTHR 1 0 :1:6 
-`uc 1 OV 1 0 :1:7 
-]
-"52320
-[s S655 . 1 `uc 1 ADSTAT0 1 0 :1:0 
-`uc 1 ADSTAT1 1 0 :1:1 
-`uc 1 ADSTAT2 1 0 :1:2 
-`uc 1 . 1 0 :1:3 
-`uc 1 ADMATH 1 0 :1:4 
-`uc 1 ADLTHR 1 0 :1:5 
-`uc 1 ADUTHR 1 0 :1:6 
-`uc 1 ADAOV 1 0 :1:7 
-]
-"52320
-[s S664 . 1 `uc 1 ADSTAT 1 0 :3:0 
-`uc 1 . 1 0 :4:3 
-`uc 1 ADOV 1 0 :1:7 
-]
-"52320
-[s S668 . 1 `uc 1 STAT0 1 0 :1:0 
-`uc 1 STAT1 1 0 :1:1 
-`uc 1 STAT2 1 0 :1:2 
-]
-"52320
-[u S672 . 1 `S648 1 . 1 0 `S655 1 . 1 0 `S664 1 . 1 0 `S668 1 . 1 0 ]
-"52320
-"52320
-[v _ADSTATbits ADSTATbits `VES672  1 e 1 @16124 ]
-"52410
-[v _ADREF ADREF `VEuc  1 e 1 @16125 ]
-"52492
-[v _ADACT ADACT `VEuc  1 e 1 @16126 ]
-"52584
-[v _ADCLK ADCLK `VEuc  1 e 1 @16127 ]
-"3 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\errno.c
+"3 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\errno.c
 [v _errno errno `i  1 e 2 0 ]
-"21 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\expf.c
+"20 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\expf.c
 [v _half half `C[2]f  1 s 8 half ]
-"20 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\powf.c
+"20 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\powf.c
 [v _bp bp `C[2]f  1 s 8 bp ]
 "21
 [v _dp_h dp_h `C[2]f  1 s 8 dp_h ]
 "22
 [v _dp_l dp_l `C[2]f  1 s 8 dp_l ]
+"59 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/tmr0.c
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
 [s S89 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
-"53 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/uart1.c
+"53 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/uart1.c
 [u S94 . 1 `S89 1 . 1 0 `uc 1 status 1 0 ]
 [v _uart1RxLastError uart1RxLastError `VES94  1 s 1 uart1RxLastError ]
 "58
@@ -592,120 +402,137 @@ SERIAL_OVERRUN 2
 [v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _UART1_ErrorHandler UART1_ErrorHandler `*.37(v  1 e 2 0 ]
-"231 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\main.c
+"254 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-[s S809 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
-"257
-[v main@Cprime Cprime `S809  1 a 18 126 ]
-"245
-[v main@Eprime Eprime `S809  1 a 18 108 ]
-"238
-[v main@Aprime Aprime `S809  1 a 18 90 ]
-"304
-[v main@Pk_1 Pk_1 `S809  1 a 18 72 ]
-"290
-[v main@xhatk_1 xhatk_1 `S809  1 a 18 54 ]
-"300
-[v main@P P `S809  1 a 18 36 ]
-"261
-[v main@Cprime_transpose Cprime_transpose `S809  1 a 18 18 ]
-"294
-[v main@xhatCorrected xhatCorrected `S809  1 a 18 0 ]
-"252
-[v main@Fprime Fprime `S809  1 a 18 222 ]
-"287
-[v main@Qk1 Qk1 `S809  1 a 18 204 ]
-"308
-[v main@sub_mat_1 sub_mat_1 `S809  1 a 18 186 ]
-"296
-[v main@PCorrected PCorrected `S809  1 a 18 168 ]
-"312
-[v main@sub_mat_3 sub_mat_3 `S809  1 a 18 150 ]
-"310
-[v main@sub_mat_2 sub_mat_2 `S809  1 a 18 132 ]
-"249
-[v main@Eprime_transpose Eprime_transpose `S809  1 a 18 202 ]
-"242
-[v main@Aprime_transpose Aprime_transpose `S809  1 a 18 184 ]
-"298
-[v main@Lk Lk `S809  1 a 18 114 ]
-"292
-[v main@fk_ fk_ `S809  1 a 18 96 ]
-"285
-[v main@xhat xhat `S809  1 a 18 78 ]
-"268
-[v main@Rk Rk `f  1 a 4 220 ]
-"322
-[v main@V V `f  1 a 4 150 ]
-"320
-[v main@I I `f  1 a 4 146 ]
-"319
-[v main@Vc Vc `f  1 a 4 142 ]
-"318
-[v main@actualSOC actualSOC `f  1 a 4 138 ]
+"361
+[v main@i_int i_int `s  1 a 2 78 ]
+"359
+[v main@v_int v_int `us  1 a 2 220 ]
+"357
+[v main@res res `E23424  1 a 1 81 ]
+"356
+[v main@b b `uc  1 a 1 80 ]
+"390
+[v main@SOC SOC `uc  1 a 1 82 ]
+[s S486 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
+"278
+[v main@Cprime Cprime `S486  1 a 18 162 ]
+"266
+[v main@Eprime Eprime `S486  1 a 18 144 ]
+"259
+[v main@Aprime Aprime `S486  1 a 18 126 ]
+"325
+[v main@Pk_1 Pk_1 `S486  1 a 18 108 ]
+"311
+[v main@xhatk_1 xhatk_1 `S486  1 a 18 90 ]
 "321
-[v main@Ik_1 Ik_1 `f  1 a 4 130 ]
+[v main@P P `S486  1 a 18 72 ]
+"282
+[v main@Cprime_transpose Cprime_transpose `S486  1 a 18 54 ]
+"315
+[v main@xhatCorrected xhatCorrected `S486  1 a 18 36 ]
+"273
+[v main@Fprime Fprime `S486  1 a 18 18 ]
+"308
+[v main@Qk1 Qk1 `S486  1 a 18 0 ]
+"329
+[v main@sub_mat_1 sub_mat_1 `S486  1 a 18 236 ]
 "317
-[v main@i i `uc  1 a 1 155 ]
-[v main@j j `uc  1 a 1 154 ]
-"326
-[v main@cumulative_time cumulative_time `uc  1 a 1 129 ]
-"367
+[v main@PCorrected PCorrected `S486  1 a 18 218 ]
+"333
+[v main@sub_mat_3 sub_mat_3 `S486  1 a 18 200 ]
+"331
+[v main@sub_mat_2 sub_mat_2 `S486  1 a 18 182 ]
+"270
+[v main@Eprime_transpose Eprime_transpose `S486  1 a 18 164 ]
+"263
+[v main@Aprime_transpose Aprime_transpose `S486  1 a 18 146 ]
+"319
+[v main@Lk Lk `S486  1 a 18 124 ]
+"313
+[v main@fk_ fk_ `S486  1 a 18 106 ]
+"306
+[v main@xhat xhat `S486  1 a 18 88 ]
+"289
+[v main@Rk Rk `f  1 a 4 142 ]
+"343
+[v main@V V `f  1 a 4 226 ]
+"341
+[v main@I I `f  1 a 4 222 ]
+"342
+[v main@Ik_1 Ik_1 `f  1 a 4 212 ]
+"340
+[v main@Vc Vc `f  1 a 4 208 ]
+"339
+[v main@actualSOC actualSOC `f  1 a 4 204 ]
+"338
+[v main@i i `uc  1 a 1 254 ]
+[v main@j j `uc  1 a 1 87 ]
+"347
+[v main@cumulative_time cumulative_time `uc  1 a 1 203 ]
+"349
+[v main@rx_buf rx_buf `[128]uc  1 s 128 rx_buf ]
+[s S538 . 5 `*.39uc 1 buf 2 0 `uc 1 len 1 2 `uc 1 i 1 3 `a 1 escaped 1 4 ]
+"350
+[v main@rx_frame rx_frame `S538  1 s 5 rx_frame ]
+"396
 } 0
-"53 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\matrix_mult.c
+"53 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\matrix_mult.c
 [v _mat_transpose mat_transpose `(v  1 e 1 0 ]
 {
 "69
-[v mat_transpose@matrix_2_2 matrix_2_2 `f  1 a 4 86 ]
+[v mat_transpose@matrix_2_2 matrix_2_2 `f  1 a 4 99 ]
 "66
-[v mat_transpose@matrix_2_1 matrix_2_1 `f  1 a 4 82 ]
+[v mat_transpose@matrix_2_1 matrix_2_1 `f  1 a 4 95 ]
 "63
-[v mat_transpose@matrix_1_1 matrix_1_1 `f  1 a 4 78 ]
+[v mat_transpose@matrix_1_1 matrix_1_1 `f  1 a 4 91 ]
 "60
-[v mat_transpose@matrix_1_2 matrix_1_2 `f  1 a 4 74 ]
-[s S809 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
+[v mat_transpose@matrix_1_2 matrix_1_2 `f  1 a 4 87 ]
+[s S486 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
 "53
-[v mat_transpose@matrix matrix `*.39S809  1 p 2 70 ]
-[v mat_transpose@result result `*.39S809  1 p 2 72 ]
+[v mat_transpose@matrix matrix `*.39S486  1 p 2 83 ]
+[v mat_transpose@result result `*.39S486  1 p 2 85 ]
 "71
 } 0
-"32 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\expf.c
+"31 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\expf.c
 [v _expf expf `(f  1 e 4 0 ]
 {
-[u S1587 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
-"37
-[v expf@hx hx `S1587  1 a 4 54 ]
-"35
-[v expf@k k `l  1 a 4 50 ]
-"34
-[v expf@lo lo `f  1 a 4 45 ]
-[v expf@hi hi `f  1 a 4 41 ]
-[v expf@y y `f  1 a 4 37 ]
-[v expf@xx xx `f  1 a 4 33 ]
-[v expf@c c `f  1 a 4 29 ]
 "36
-[v expf@sign sign `a  1 a 1 49 ]
-"32
-[v expf@x x `f  1 p 4 85 ]
-"86
+[v expf@hx hx `ul  1 a 4 67 ]
+"34
+[v expf@k k `l  1 a 4 63 ]
+"33
+[v expf@lo lo `f  1 a 4 57 ]
+[v expf@hi hi `f  1 a 4 53 ]
+[v expf@y y `f  1 a 4 49 ]
+[v expf@xx xx `f  1 a 4 45 ]
+[v expf@c c `f  1 a 4 41 ]
+[u S1337 . 4 `f 1 f 4 0 `l 1 s 4 0 `ul 1 u 4 0 ]
+"37
+[v expf@__xc8_float_word __xc8_float_word `S1337  1 a 4 21 ]
+"35
+[v expf@sign sign `i  1 a 2 61 ]
+"31
+[v expf@x x `f  1 p 4 13 ]
+"87
 } 0
-"43 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
-[v ___fltol __fltol `(l  1 e 4 0 ]
+"131 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/uart1.c
+[v _UART1_is_tx_ready UART1_is_tx_ready `(a  1 e 1 0 ]
 {
-"45
-[v ___fltol@exp1 exp1 `uc  1 a 1 66 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 65 ]
-"43
-[v ___fltol@f1 f1 `d  1 p 4 57 ]
-"70
+"134
 } 0
-"170 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/uart1.c
+"126
+[v _UART1_is_rx_ready UART1_is_rx_ready `(a  1 e 1 0 ]
+{
+"129
+} 0
+"170
 [v _UART1_Write UART1_Write `(v  1 e 1 0 ]
 {
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
 [v UART1_Write@txData txData `uc  1 a 1 wreg ]
-[v UART1_Write@txData txData `uc  1 a 1 0 ]
+[v UART1_Write@txData txData `uc  1 a 1 2 ]
 "177
 } 0
 "145
@@ -726,12 +553,12 @@ SERIAL_OVERRUN 2
 {
 "198
 } 0
-"50 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/mcc.c
+"50 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "58
 } 0
-"66 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/uart1.c
+"66 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
 {
 "124
@@ -739,232 +566,269 @@ SERIAL_OVERRUN 2
 "204
 [v _UART1_SetOverrunErrorHandler UART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+[v UART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 2 ]
 "206
 } 0
 "200
 [v _UART1_SetFramingErrorHandler UART1_SetFramingErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+[v UART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 2 ]
 "202
 } 0
 "208
 [v _UART1_SetErrorHandler UART1_SetErrorHandler `(v  1 e 1 0 ]
 {
-[v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+[v UART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 2 ]
 "210
 } 0
-"60 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/tmr0.c
+"61 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 {
-"78
+"85
 } 0
-"74 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/mcc.c
+"134
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
+"136
+} 0
+"74 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
 "92
 } 0
-"55 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/pin_manager.c
+"55 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "117
 } 0
-"60 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/mcc.c
+"60 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "72
 } 0
-"62 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/adcc.c
-[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"52 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
-"111
+"56
 } 0
-"142 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\main.c
+"28 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\frame.c
+[v _Frame_Update Frame_Update `(E23424  1 e 1 0 ]
+{
+[s S538 . 5 `*.39uc 1 buf 2 0 `uc 1 len 1 2 `uc 1 i 1 3 `a 1 escaped 1 4 ]
+[v Frame_Update@frame frame `*.39S538  1 p 2 2 ]
+[v Frame_Update@b b `uc  1 p 1 4 ]
+"71
+} 0
+"20
+[v _Frame_Init Frame_Init `(v  1 e 1 0 ]
+{
+[s S538 . 5 `*.39uc 1 buf 2 0 `uc 1 len 1 2 `uc 1 i 1 3 `a 1 escaped 1 4 ]
+[v Frame_Init@frame frame `*.39S538  1 p 2 2 ]
+[v Frame_Init@buf buf `*.39uc  1 p 2 4 ]
+[v Frame_Init@len len `uc  1 p 1 6 ]
+"26
+} 0
+"165 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\main.c
 [v _EKF EKF `(v  1 e 1 0 ]
 {
-"177
-[v EKF@combined_error combined_error `f  1 a 4 122 ]
-[v EKF@error_estimate error_estimate `f  1 a 4 118 ]
-"192
-[v EKF@temp_val temp_val `f  1 a 4 114 ]
-"150
-[v EKF@row row `uc  1 a 1 128 ]
-[v EKF@col col `uc  1 a 1 127 ]
-[v EKF@index index `uc  1 a 1 126 ]
-[s S809 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
-"142
-[v EKF@xhatk_1 xhatk_1 `*.39S809  1 p 2 0 ]
-[v EKF@Pk_1 Pk_1 `*.39S809  1 p 2 2 ]
+"200
+[v EKF@combined_error combined_error `f  1 a 4 135 ]
+[v EKF@error_estimate error_estimate `f  1 a 4 131 ]
+"215
+[v EKF@temp_val temp_val `f  1 a 4 127 ]
+"173
+[v EKF@row row `uc  1 a 1 141 ]
+[v EKF@col col `uc  1 a 1 140 ]
+[v EKF@index index `uc  1 a 1 139 ]
+[s S486 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
+"165
+[v EKF@xhatk_1 xhatk_1 `*.39S486  1 p 2 0 ]
+[v EKF@Pk_1 Pk_1 `*.39S486  1 p 2 2 ]
 [v EKF@I I `f  1 p 4 4 ]
 [v EKF@Ik_1 Ik_1 `f  1 p 4 8 ]
 [v EKF@V V `f  1 p 4 12 ]
 [v EKF@Voc0 Voc0 `f  1 p 4 16 ]
-"143
+"166
 [v EKF@Rk Rk `f  1 p 4 20 ]
-[v EKF@Aprime Aprime `*.39S809  1 p 2 24 ]
-[v EKF@Cprime Cprime `*.39S809  1 p 2 26 ]
-[v EKF@Eprime Eprime `*.39S809  1 p 2 28 ]
-[v EKF@Fprime Fprime `*.39S809  1 p 2 30 ]
-"144
-[v EKF@fk_ fk_ `*.39S809  1 p 2 32 ]
+[v EKF@Aprime Aprime `*.39S486  1 p 2 24 ]
+[v EKF@Cprime Cprime `*.39S486  1 p 2 26 ]
+[v EKF@Eprime Eprime `*.39S486  1 p 2 28 ]
+[v EKF@Fprime Fprime `*.39S486  1 p 2 30 ]
+"167
+[v EKF@fk_ fk_ `*.39S486  1 p 2 32 ]
 [v EKF@dt dt `f  1 p 4 34 ]
 [v EKF@Cbat Cbat `f  1 p 4 38 ]
 [v EKF@Cc Cc `f  1 p 4 42 ]
 [v EKF@Rc Rc `f  1 p 4 46 ]
-[v EKF@Qk1 Qk1 `*.39S809  1 p 2 50 ]
-"145
-[v EKF@Aprime_transpose Aprime_transpose `*.39S809  1 p 2 52 ]
-[v EKF@Eprime_transpose Eprime_transpose `*.39S809  1 p 2 54 ]
-"146
-[v EKF@sub_mat_1 sub_mat_1 `*.39S809  1 p 2 56 ]
-[v EKF@sub_mat_2 sub_mat_2 `*.39S809  1 p 2 58 ]
-[v EKF@sub_mat_3 sub_mat_3 `*.39S809  1 p 2 60 ]
-[v EKF@xhat xhat `*.39S809  1 p 2 62 ]
-"147
-[v EKF@P P `*.39S809  1 p 2 64 ]
-[v EKF@Cprime_transpose Cprime_transpose `*.39S809  1 p 2 66 ]
-[v EKF@Lk Lk `*.39S809  1 p 2 68 ]
+[v EKF@Qk1 Qk1 `*.39S486  1 p 2 50 ]
+"168
+[v EKF@Aprime_transpose Aprime_transpose `*.39S486  1 p 2 52 ]
+[v EKF@Eprime_transpose Eprime_transpose `*.39S486  1 p 2 54 ]
+"169
+[v EKF@sub_mat_1 sub_mat_1 `*.39S486  1 p 2 56 ]
+[v EKF@sub_mat_2 sub_mat_2 `*.39S486  1 p 2 58 ]
+[v EKF@sub_mat_3 sub_mat_3 `*.39S486  1 p 2 60 ]
+[v EKF@xhat xhat `*.39S486  1 p 2 62 ]
+"170
+[v EKF@P P `*.39S486  1 p 2 64 ]
+[v EKF@Cprime_transpose Cprime_transpose `*.39S486  1 p 2 66 ]
+[v EKF@Lk Lk `*.39S486  1 p 2 68 ]
 [v EKF@R0 R0 `f  1 p 4 70 ]
-"148
-[v EKF@xhatCorrected xhatCorrected `*.39S809  1 p 2 74 ]
-[v EKF@PCorrected PCorrected `*.39S809  1 p 2 76 ]
-"218
+"171
+[v EKF@xhatCorrected xhatCorrected `*.39S486  1 p 2 74 ]
+[v EKF@PCorrected PCorrected `*.39S486  1 p 2 76 ]
+"241
 } 0
-"55 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\powf.c
+"53 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\powf.c
 [v _powf powf `JJ(f  1 e 4 0 ]
 {
-"203
-[v powf@s2 s2 `f  1 a 4 144 ]
-[u S1616 fui 4 `f 1 f 4 0 `ul 1 u 4 0 `l 1 i 4 0 ]
-"202
-[v powf@s_h s_h `S1616  1 a 4 116 ]
-[v powf@t_h t_h `S1616  1 a 4 112 ]
-"203
-[v powf@t_l t_l `f  1 a 4 52 ]
-[v powf@s_l s_l `f  1 a 4 48 ]
-[u S1616 fui 4 `f 1 f 4 0 `ul 1 u 4 0 `l 1 i 4 0 ]
-"65
-[v powf@z z `S1616  1 a 4 180 ]
-[v powf@t t `S1616  1 a 4 176 ]
-[v powf@ix ix `S1616  1 a 4 172 ]
+"155
+[v powf@s2 s2 `f  1 a 4 132 ]
+[v powf@s_h s_h `f  1 a 4 100 ]
+[v powf@t_h t_h `f  1 a 4 96 ]
+[v powf@t_l t_l `f  1 a 4 40 ]
+[v powf@s_l s_l `f  1 a 4 36 ]
+[u S1337 . 4 `f 1 f 4 0 `l 1 s 4 0 `ul 1 u 4 0 ]
 "59
-[v powf@j j `l  1 a 4 168 ]
-[v powf@k k `l  1 a 4 164 ]
-"65
-[v powf@p_h p_h `S1616  1 a 4 160 ]
-"59
-[v powf@iy iy `l  1 a 4 156 ]
-"65
-[v powf@is is `S1616  1 a 4 148 ]
-[v powf@t1 t1 `S1616  1 a 4 140 ]
-[v powf@hy hy `S1616  1 a 4 136 ]
-"59
-[v powf@n n `l  1 a 4 132 ]
-"58
-[v powf@v v `f  1 a 4 128 ]
-[v powf@u u `f  1 a 4 124 ]
-"65
-[v powf@ax ax `S1616  1 a 4 120 ]
-"57
-[v powf@p_l p_l `f  1 a 4 108 ]
-"65
-[v powf@hx hx `S1616  1 a 4 104 ]
-"61
-[v powf@sn sn `ul  1 a 4 100 ]
-"58
-[v powf@s s `f  1 a 4 96 ]
-"59
-[v powf@yisint yisint `l  1 a 4 84 ]
-"58
-[v powf@r r `f  1 a 4 80 ]
-[v powf@w w `f  1 a 4 68 ]
-"65
-[v powf@y1 y1 `S1616  1 a 4 44 ]
-"59
-[v powf@i i `l  1 a 4 40 ]
-"57
-[v powf@z_l z_l `f  1 a 4 36 ]
-[v powf@z_h z_h `f  1 a 4 32 ]
-"58
-[v powf@t2 t2 `f  1 a 4 28 ]
+[v powf@__xc8_float_word __xc8_float_word `S1337  1 a 4 176 ]
 "55
-[v powf@x x `f  1 p 4 85 ]
-[v powf@y y `f  1 p 4 89 ]
-"348
+[v powf@z z `f  1 a 4 172 ]
+"56
+[v powf@t t `f  1 a 4 168 ]
+"57
+[v powf@j j `l  1 a 4 164 ]
+"58
+[v powf@ix ix `l  1 a 4 160 ]
+"57
+[v powf@k k `l  1 a 4 152 ]
+"55
+[v powf@p_h p_h `f  1 a 4 148 ]
+"58
+[v powf@is is `l  1 a 4 140 ]
+[v powf@iy iy `l  1 a 4 136 ]
+"56
+[v powf@sn sn `f  1 a 4 128 ]
+[v powf@t1 t1 `f  1 a 4 124 ]
+"57
+[v powf@n n `l  1 a 4 120 ]
+"58
+[v powf@hy hy `l  1 a 4 116 ]
+"56
+[v powf@v v `f  1 a 4 112 ]
+[v powf@u u `f  1 a 4 108 ]
+"55
+[v powf@ax ax `f  1 a 4 104 ]
+[v powf@p_l p_l `f  1 a 4 92 ]
+"58
+[v powf@hx hx `l  1 a 4 88 ]
+"56
+[v powf@s s `f  1 a 4 84 ]
+"57
+[v powf@yisint yisint `l  1 a 4 72 ]
+"56
+[v powf@r r `f  1 a 4 68 ]
+[v powf@w w `f  1 a 4 56 ]
+"57
+[v powf@i i `l  1 a 4 32 ]
+"56
+[v powf@y1 y1 `f  1 a 4 28 ]
+"55
+[v powf@z_l z_l `f  1 a 4 24 ]
+[v powf@z_h z_h `f  1 a 4 20 ]
+"56
+[v powf@t2 t2 `f  1 a 4 16 ]
+"53
+[v powf@x x `f  1 p 4 45 ]
+[v powf@y y `f  1 p 4 49 ]
+"268
 } 0
-"24 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sqrtf.c
+"22 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sqrtf.c
 [v _sqrtf sqrtf `(f  1 e 4 0 ]
 {
-[u S1733 . 4 `f 1 f 4 0 `l 1 i 4 0 ]
-"29
-[v sqrtf@ix ix `S1733  1 a 4 33 ]
-"28
-[v sqrtf@r r `ul  1 a 4 29 ]
+"26
+[v sqrtf@ix ix `l  1 a 4 41 ]
 "27
-[v sqrtf@m m `l  1 a 4 25 ]
-[v sqrtf@t t `l  1 a 4 21 ]
-[v sqrtf@q q `l  1 a 4 17 ]
+[v sqrtf@r r `ul  1 a 4 37 ]
+"26
+[v sqrtf@m m `l  1 a 4 33 ]
+"24
+[v sqrtf@z z `f  1 a 4 29 ]
+"26
+[v sqrtf@t t `l  1 a 4 25 ]
+[v sqrtf@q q `l  1 a 4 21 ]
+[u S1337 . 4 `f 1 f 4 0 `l 1 s 4 0 `ul 1 u 4 0 ]
+"28
+[v sqrtf@__xc8_float_word __xc8_float_word `S1337  1 a 4 17 ]
+"26
 [v sqrtf@i i `l  1 a 4 13 ]
 [v sqrtf@s s `l  1 a 4 9 ]
-"24
+"22
 [v sqrtf@x x `f  1 p 4 0 ]
-"102
+"89
 } 0
-"4 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\scalbnf.c
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\nanf.c
+[v _nanf nanf `(f  1 e 4 0 ]
+{
+[u S1451 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"6
+[v nanf@u u `S1451  1 a 4 6 ]
+"4
+[v nanf@s s `*.32Cuc  1 p 2 2 ]
+"9
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 77 ]
+[v ___flge@ff2 ff2 `d  1 p 4 81 ]
+"19
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\scalbnf.c
 [v _scalbnf scalbnf `(f  1 e 4 0 ]
 {
 "7
-[v scalbnf@y y `f  1 a 4 55 ]
-[u S1587 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[v scalbnf@y y `f  1 a 4 57 ]
+[u S1451 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v scalbnf@u u `S1587  1 a 4 51 ]
+[v scalbnf@u u `S1451  1 a 4 53 ]
 "4
-[v scalbnf@x x `f  1 p 4 41 ]
-[v scalbnf@n n `i  1 p 2 45 ]
+[v scalbnf@x x `f  1 p 4 43 ]
+[v scalbnf@n n `i  1 p 2 47 ]
 "31
 } 0
-"10 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
-[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fabsf.c
+[v _fabsf fabsf `(f  1 e 4 0 ]
 {
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-"13
-[v ___xxtofl@arg arg `ul  1 a 4 10 ]
-"12
-[v ___xxtofl@exp exp `uc  1 a 1 9 ]
-"10
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-[v ___xxtofl@val val `l  1 p 4 0 ]
-"15
-[v ___xxtofl@sign sign `uc  1 a 1 8 ]
-"44
+[u S1451 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"6
+[v fabsf@u u `S1451  1 a 4 6 ]
+"4
+[v fabsf@x x `f  1 p 4 2 ]
+"5
+[v fabsf@F465 F465 `S1451  1 s 4 F465 ]
+"9
 } 0
-"15 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flneg.c
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\flneg.c
 [v ___flneg __flneg `(d  1 e 4 0 ]
 {
-[v ___flneg@f1 f1 `d  1 p 4 0 ]
+[v ___flneg@f1 f1 `d  1 p 4 2 ]
 "20
 } 0
-"4 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\flge.c
-[v ___flge __flge `(b  1 e 0 0 ]
-{
-[v ___flge@ff1 ff1 `d  1 p 4 73 ]
-[v ___flge@ff2 ff2 `d  1 p 4 77 ]
-"19
-} 0
-"32 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\matrix_mult.c
+"32 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\matrix_mult.c
 [v _mat_multiply mat_multiply `(v  1 e 1 0 ]
 {
 "43
-[v mat_multiply@k k `i  1 a 2 79 ]
+[v mat_multiply@k k `i  1 a 2 92 ]
 "42
-[v mat_multiply@j j `i  1 a 2 83 ]
+[v mat_multiply@j j `i  1 a 2 96 ]
 "41
-[v mat_multiply@i i `i  1 a 2 81 ]
-[s S809 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
+[v mat_multiply@i i `i  1 a 2 94 ]
+[s S486 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
 "32
-[v mat_multiply@matrixA matrixA `*.39S809  1 p 2 70 ]
-[v mat_multiply@matrixB matrixB `*.39S809  1 p 2 72 ]
-[v mat_multiply@matrixC matrixC `*.39S809  1 p 2 74 ]
+[v mat_multiply@matrixA matrixA `*.39S486  1 p 2 83 ]
+[v mat_multiply@matrixB matrixB `*.39S486  1 p 2 85 ]
+[v mat_multiply@matrixC matrixC `*.39S486  1 p 2 87 ]
 "49
 } 0
 "3
@@ -972,66 +836,97 @@ SERIAL_OVERRUN 2
 {
 [v mat_init@rows rows `uc  1 a 1 wreg ]
 [v mat_init@rows rows `uc  1 a 1 wreg ]
-[v mat_init@columns columns `uc  1 p 1 8 ]
-[s S809 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
-[v mat_init@matrix matrix `*.39S809  1 p 2 9 ]
+[v mat_init@columns columns `uc  1 p 1 10 ]
+[s S486 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
+[v mat_init@matrix matrix `*.39S486  1 p 2 11 ]
 "5
-[v mat_init@rows rows `uc  1 a 1 11 ]
+[v mat_init@rows rows `uc  1 a 1 13 ]
 "10
 } 0
 "23
 [v _mat_fill_zero mat_fill_zero `(v  1 e 1 0 ]
 {
 "25
-[v mat_fill_zero@i i `i  1 a 2 6 ]
-[s S809 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
+[v mat_fill_zero@i i `i  1 a 2 8 ]
+[s S486 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
 "23
-[v mat_fill_zero@matrix matrix `*.39S809  1 p 2 0 ]
+[v mat_fill_zero@matrix matrix `*.39S486  1 p 2 2 ]
 "30
 } 0
-"121 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\main.c
+"144 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\main.c
 [v _hk hk `(f  1 e 4 0 ]
 {
-[v hk@SOC_val SOC_val `f  1 p 4 73 ]
-[v hk@I I `f  1 p 4 77 ]
-[v hk@Voc0 Voc0 `f  1 p 4 81 ]
-[v hk@R0 R0 `f  1 p 4 85 ]
-"123
+[v hk@SOC_val SOC_val `f  1 p 4 17 ]
+[v hk@I I `f  1 p 4 21 ]
+[v hk@Voc0 Voc0 `f  1 p 4 25 ]
+[v hk@R0 R0 `f  1 p 4 29 ]
+"146
 } 0
-"117
+"119
 [v _VOC VOC `(f  1 e 4 0 ]
 {
-[v VOC@SOC SOC `f  1 p 4 57 ]
-[v VOC@Voc0 Voc0 `f  1 p 4 61 ]
+"122
+[v VOC@voc_lt voc_lt `C[101]us  1 a 202 0 ]
+"120
+[v VOC@soc_int soc_int `c  1 a 1 202 ]
 "119
+[v VOC@soc soc `f  1 p 4 13 ]
+"120
+[v VOC@F23485 F23485 `C[101]us  1 s 202 F23485 ]
+"142
 } 0
-"125
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 12 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 11 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 2 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 10 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 68 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 67 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 59 ]
+"70
+} 0
+"148 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\main.c
 [v _fk fk `(v  1 e 1 0 ]
 {
-"126
-[v fk@array_mat array_mat `[2][1]f  1 a 8 94 ]
-[s S809 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
-"125
-[v fk@xhatk_1 xhatk_1 `*.39S809  1 p 2 70 ]
-[v fk@I I `f  1 p 4 72 ]
-[v fk@dt dt `f  1 p 4 76 ]
-[v fk@Cbat Cbat `f  1 p 4 80 ]
-[v fk@Cc Cc `f  1 p 4 84 ]
-[v fk@Rc Rc `f  1 p 4 88 ]
-[v fk@fk_ fk_ `*.39S809  1 p 2 92 ]
-"136
+"149
+[v fk@array_mat array_mat `[2][1]f  1 a 8 107 ]
+[s S486 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
+"148
+[v fk@xhatk_1 xhatk_1 `*.39S486  1 p 2 83 ]
+[v fk@I I `f  1 p 4 85 ]
+[v fk@dt dt `f  1 p 4 89 ]
+[v fk@Cbat Cbat `f  1 p 4 93 ]
+[v fk@Cc Cc `f  1 p 4 97 ]
+[v fk@Rc Rc `f  1 p 4 101 ]
+[v fk@fk_ fk_ `*.39S486  1 p 2 105 ]
+"159
 } 0
-"12 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\matrix_mult.c
+"12 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\matrix_mult.c
 [v _mat_set mat_set `(v  1 e 1 0 ]
 {
 [v mat_set@row row `uc  1 a 1 wreg ]
 [v mat_set@row row `uc  1 a 1 wreg ]
-[v mat_set@column column `uc  1 p 1 58 ]
-[v mat_set@element element `f  1 p 4 59 ]
-[s S809 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
-[v mat_set@matrix matrix `*.39S809  1 p 2 63 ]
+[v mat_set@column column `uc  1 p 1 71 ]
+[v mat_set@element element `f  1 p 4 72 ]
+[s S486 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
+[v mat_set@matrix matrix `*.39S486  1 p 2 76 ]
 "14
-[v mat_set@row row `uc  1 a 1 93 ]
+[v mat_set@row row `uc  1 a 1 89 ]
 "17
 } 0
 "19
@@ -1039,71 +934,71 @@ SERIAL_OVERRUN 2
 {
 [v mat_get@row row `uc  1 a 1 wreg ]
 [v mat_get@row row `uc  1 a 1 wreg ]
-[v mat_get@column column `uc  1 p 1 6 ]
-[s S809 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
-[v mat_get@matrix matrix `*.39S809  1 p 2 7 ]
-[v mat_get@row row `uc  1 a 1 15 ]
+[v mat_get@column column `uc  1 p 1 8 ]
+[s S486 MatrixStruct 18 `uc 1 rows 1 0 `uc 1 columns 1 1 `[4]f 1 elements 16 2 ]
+[v mat_get@matrix matrix `*.39S486  1 p 2 9 ]
+[v mat_get@row row `uc  1 a 1 17 ]
 "21
 } 0
-"15 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\Umul16.c
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
-[v ___wmul@product product `ui  1 a 2 4 ]
+[v ___wmul@product product `ui  1 a 2 6 ]
 "15
-[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+[v ___wmul@multiplier multiplier `ui  1 p 2 2 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
 "53
 } 0
-"245 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcadd.c
+"245 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
 [v ___flsub __flsub `(d  1 e 4 0 ]
 {
-[v ___flsub@b b `d  1 p 4 65 ]
-[v ___flsub@a a `d  1 p 4 69 ]
+[v ___flsub@b b `d  1 p 4 69 ]
+[v ___flsub@a a `d  1 p 4 73 ]
 "250
 } 0
 "10
 [v ___fladd __fladd `(d  1 e 4 0 ]
 {
 "17
-[v ___fladd@grs grs `uc  1 a 1 56 ]
+[v ___fladd@grs grs `uc  1 a 1 58 ]
 "15
-[v ___fladd@bexp bexp `uc  1 a 1 55 ]
+[v ___fladd@bexp bexp `uc  1 a 1 57 ]
 "16
-[v ___fladd@aexp aexp `uc  1 a 1 54 ]
+[v ___fladd@aexp aexp `uc  1 a 1 56 ]
 "13
-[v ___fladd@signs signs `uc  1 a 1 53 ]
+[v ___fladd@signs signs `uc  1 a 1 55 ]
 "10
-[v ___fladd@b b `d  1 p 4 41 ]
-[v ___fladd@a a `d  1 p 4 45 ]
+[v ___fladd@b b `d  1 p 4 43 ]
+[v ___fladd@a a `d  1 p 4 47 ]
 "237
 } 0
-"8 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S1452 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S1202 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S1457 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S1460 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1452 1 fAsBytes 4 0 `S1457 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S1460  1 a 4 35 ]
+[s S1207 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S1210 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1202 1 fAsBytes 4 0 `S1207 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1210  1 a 4 37 ]
 "12
-[v ___flmul@grs grs `ul  1 a 4 29 ]
-[s S1528 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[v ___flmul@grs grs `ul  1 a 4 32 ]
+[s S1278 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S1531 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1528 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S1531  1 a 2 39 ]
+[u S1281 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1278 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1281  1 a 2 41 ]
 "10
-[v ___flmul@bexp bexp `uc  1 a 1 34 ]
+[v ___flmul@bexp bexp `uc  1 a 1 36 ]
 "11
-[v ___flmul@aexp aexp `uc  1 a 1 33 ]
+[v ___flmul@aexp aexp `uc  1 a 1 31 ]
 "9
-[v ___flmul@sign sign `uc  1 a 1 28 ]
+[v ___flmul@sign sign `uc  1 a 1 30 ]
 "8
-[v ___flmul@b b `d  1 p 4 16 ]
-[v ___flmul@a a `d  1 p 4 20 ]
+[v ___flmul@b b `d  1 p 4 18 ]
+[v ___flmul@a a `d  1 p 4 22 ]
 "205
 } 0
-"11 D:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcdiv.c
+"11 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 {
 "21
@@ -1119,12 +1014,22 @@ SERIAL_OVERRUN 2
 "16
 [v ___fldiv@sign sign `uc  1 a 1 4 ]
 "11
-[v ___fldiv@b b `d  1 p 4 73 ]
-[v ___fldiv@a a `d  1 p 4 77 ]
+[v ___fldiv@b b `d  1 p 4 77 ]
+[v ___fldiv@a a `d  1 p 4 81 ]
 "185
 } 0
-"174 D:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/adcc.c
-[v _ADCC_DischargeSampleCapacitor ADCC_DischargeSampleCapacitor `(v  1 e 1 0 ]
+"58 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
-"178
+"69
+} 0
+"121 C:\Users\leoja\Documents\GitHub\SOC-Estimation-FE10\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"131
+} 0
+"138
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"141
 } 0
